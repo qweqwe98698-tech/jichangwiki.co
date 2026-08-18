@@ -1,0 +1,391 @@
+/**
+ * JichangWiki 5.0 - Custom Dark Slate + Ice Cyan Design System
+ * Domain: https://jichangwiki.co
+ */
+
+:root {
+  /* Core Color Tokens */
+  --jw-bg-base: #0B0D10;
+  --jw-bg-card: #11151A;
+  --jw-bg-surface: #161B22;
+  --jw-bg-elevated: #1B222B;
+  --jw-bg-hover: #222B37;
+  
+  --jw-border-subtle: #1C232D;
+  --jw-border-default: #252F3C;
+  --jw-border-focus: #00E5FF;
+  
+  --jw-text-primary: #E7EAF0;
+  --jw-text-secondary: #929AA8;
+  --jw-text-muted: #626D7E;
+  
+  --jw-accent: #00E5FF;
+  --jw-accent-hover: #38BDF8;
+  --jw-accent-dim: rgba(0, 229, 255, 0.12);
+  --jw-accent-glow: rgba(0, 229, 255, 0.2);
+  
+  --jw-success: #10B981;
+  --jw-success-dim: rgba(16, 185, 129, 0.12);
+  --jw-warning: #F59E0B;
+  --jw-warning-dim: rgba(245, 158, 11, 0.12);
+  --jw-danger: #EF4444;
+  --jw-danger-dim: rgba(239, 68, 68, 0.12);
+  
+  /* Typography & Sizing */
+  --jw-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  --jw-font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  
+  --jw-radius-sm: 4px;
+  --jw-radius-md: 8px;
+  --jw-radius-lg: 12px;
+  --jw-radius-xl: 16px;
+  
+  /* VitePress Overrides */
+  --vp-c-bg: var(--jw-bg-base);
+  --vp-c-bg-alt: var(--jw-bg-card);
+  --vp-c-bg-elv: var(--jw-bg-surface);
+  --vp-c-bg-soft: var(--jw-bg-surface);
+  
+  --vp-c-border: var(--jw-border-default);
+  --vp-c-divider: var(--jw-border-subtle);
+  --vp-c-gutter: var(--jw-border-subtle);
+  
+  --vp-c-text-1: var(--jw-text-primary);
+  --vp-c-text-2: var(--jw-text-secondary);
+  --vp-c-text-3: var(--jw-text-muted);
+  
+  --vp-c-brand-1: var(--jw-accent);
+  --vp-c-brand-2: var(--jw-accent-hover);
+  --vp-c-brand-3: #22D3EE;
+  --vp-c-brand-soft: var(--jw-accent-dim);
+  
+  --vp-nav-bg-color: rgba(11, 13, 16, 0.85);
+  --vp-nav-screen-bg-color: #0B0D10;
+  
+  --vp-sidebar-bg-color: var(--jw-bg-base);
+  --vp-sidebar-width: 270px;
+  
+  --vp-layout-max-width: 1440px;
+}
+
+/* Global Reset & Base */
+html {
+  background-color: var(--jw-bg-base);
+  color: var(--jw-text-primary);
+  font-family: var(--jw-font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--jw-bg-base);
+  color: var(--jw-text-primary);
+  line-height: 1.7;
+  font-size: 15.5px;
+}
+
+/* Modern Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--jw-bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: #252F3C;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3B4A5E;
+}
+
+/* Container Spacing & Reading width */
+.VPDoc:not(.has-sidebar) .content {
+  max-width: 860px !important;
+}
+
+.VPDoc.has-sidebar .content {
+  max-width: 840px !important;
+}
+
+.vp-doc {
+  font-size: 15.5px;
+  line-height: 1.75;
+}
+
+.vp-doc h1 {
+  font-size: 1.85rem !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1.25rem !important;
+  letter-spacing: -0.02em;
+  border-bottom: none !important;
+}
+
+.vp-doc h2 {
+  font-size: 1.35rem !important;
+  font-weight: 600 !important;
+  color: #F1F5F9 !important;
+  margin-top: 2rem !important;
+  margin-bottom: 0.85rem !important;
+  border-bottom: 1px solid var(--jw-border-subtle) !important;
+  padding-bottom: 0.4rem !important;
+}
+
+.vp-doc h3 {
+  font-size: 1.12rem !important;
+  font-weight: 600 !important;
+  color: #E2E8F0 !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+.vp-doc p {
+  margin: 0.85rem 0;
+  color: #CBD5E1;
+}
+
+.vp-doc strong {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.vp-doc a {
+  color: var(--jw-accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.vp-doc a:hover {
+  color: var(--jw-accent-hover);
+  text-decoration: underline;
+}
+
+/* Custom Table Design */
+.vp-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.88rem;
+  background: var(--jw-bg-card);
+  border: 1px solid var(--jw-border-subtle);
+  border-radius: var(--jw-radius-md);
+  overflow: hidden;
+}
+
+.vp-doc th {
+  background: var(--jw-bg-surface);
+  color: #F8FAFC;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--jw-border-default);
+}
+
+.vp-doc td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--jw-border-subtle);
+  color: #CBD5E1;
+}
+
+.vp-doc tr:last-child td {
+  border-bottom: none;
+}
+
+.vp-doc tr:hover td {
+  background: var(--jw-bg-surface);
+}
+
+/* Code Blocks & Inline Code */
+.vp-doc :not(pre) > code {
+  background: #141A22 !important;
+  color: #38BDF8 !important;
+  border: 1px solid #202A36 !important;
+  padding: 0.15rem 0.4rem !important;
+  border-radius: 4px !important;
+  font-size: 0.85em !important;
+  font-family: var(--jw-font-mono) !important;
+}
+
+.vp-doc div[class*="language-"] {
+  background: #0E1217 !important;
+  border: 1px solid var(--jw-border-default) !important;
+  border-radius: var(--jw-radius-md) !important;
+  margin: 1.2rem 0 !important;
+}
+
+/* Blockquotes */
+.vp-doc blockquote {
+  border-left: 3px solid var(--jw-accent) !important;
+  background: rgba(0, 229, 255, 0.04) !important;
+  margin: 1.2rem 0 !important;
+  padding: 0.75rem 1.25rem !important;
+  border-radius: 0 var(--jw-radius-sm) var(--jw-radius-sm) 0 !important;
+  color: #94A3B8 !important;
+}
+
+.vp-doc blockquote p {
+  margin: 0.25rem 0 !important;
+}
+
+/* Custom Callout Badge Tags */
+.jw-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.jw-tag-cyan {
+  background: rgba(0, 229, 255, 0.1);
+  color: #00E5FF;
+  border-color: rgba(0, 229, 255, 0.25);
+}
+
+.jw-tag-blue {
+  background: rgba(59, 130, 246, 0.1);
+  color: #60A5FA;
+  border-color: rgba(59, 130, 246, 0.25);
+}
+
+.jw-tag-green {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10B981;
+  border-color: rgba(16, 185, 129, 0.25);
+}
+
+.jw-tag-amber {
+  background: rgba(245, 158, 11, 0.1);
+  color: #F59E0B;
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+.jw-tag-purple {
+  background: rgba(168, 85, 247, 0.1);
+  color: #C084FC;
+  border-color: rgba(168, 85, 247, 0.25);
+}
+
+.jw-tag-red {
+  background: rgba(239, 68, 68, 0.1);
+  color: #F87171;
+  border-color: rgba(239, 68, 68, 0.25);
+}
+
+/* Metadata pill badges */
+.jw-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 20px;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+.jw-badge-cyan {
+  background: rgba(0, 229, 255, 0.1);
+  color: #00E5FF;
+  border-color: rgba(0, 229, 255, 0.25);
+}
+
+.jw-badge-green {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10B981;
+  border-color: rgba(16, 185, 129, 0.25);
+}
+
+.jw-badge-amber {
+  background: rgba(245, 158, 11, 0.1);
+  color: #F59E0B;
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+  .VPDoc .content-container {
+    padding: 0 1rem !important;
+  }
+}
+
+/* Navbar Brand & Logo */
+.VPNavBarTitle a.title {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+  letter-spacing: -0.02em !important;
+  text-decoration: none !important;
+}
+
+.VPNavBarTitle .logo {
+  height: 28px !important;
+  width: 28px !important;
+  margin-right: 0 !important;
+  border-radius: 6px;
+}
+
+.VPNavBarTitle a.title span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  color: #FFFFFF !important;
+}
+
+.VPNavBarTitle a.title span::after {
+  content: '百科';
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #00E5FF;
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+}
+
+/* VPNavBar Menu Links Refinements */
+.VPNavBarMenuLink {
+  padding: 0 8px !important;
+  font-size: 0.86rem !important;
+  font-weight: 500 !important;
+}
+
+.VPNavBarMenuGroup > button {
+  padding: 0 8px !important;
+  font-size: 0.86rem !important;
+  font-weight: 500 !important;
+}
+
+/* Flagship Big CTA Button */
+.big-cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #00E5FF 0%, #00B4D8 100%);
+  color: #0B0D10 !important;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  text-decoration: none !important;
+  box-shadow: 0 4px 20px rgba(0, 229, 255, 0.35);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.02em;
+}
+
+.big-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(0, 229, 255, 0.55);
+  filter: brightness(1.05);
+}
+

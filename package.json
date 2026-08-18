@@ -1,0 +1,24 @@
+{
+  "name": "jichangwiki-knowledge-base",
+  "version": "5.0.0",
+  "description": "VitePress 百科知识库 5.0 - 网络工具、代理客户端、协议与线路全景技术百科",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs --port 5173",
+    "build:docs": "vitepress build docs",
+    "index:search": "pagefind --site docs/.vitepress/dist",
+    "build": "vitepress build docs && pagefind --site docs/.vitepress/dist",
+    "seo:check": "node scripts/seo-health-check.mjs",
+    "release": "npm run build && node scripts/seo-health-check.mjs",
+    "preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "pagefind": "^1.3.0",
+    "typescript": "^5.7.3",
+    "vitepress": "^1.6.3"
+  }
+}
