@@ -1,13 +1,14 @@
 import { defineConfig } from 'vitepress'
 import { nav } from './data/nav'
 import { sidebar } from './data/sidebars/index'
+import { DOMAIN, INDEXNOW_KEY } from './data/categories'
+import { applyPageSeoMetadata } from './utils/seoSchema'
 import fs from 'node:fs'
 import path from 'node:path'
 
-const DOMAIN = 'https://jichangwiki.co'
-
 export default defineConfig({
   title: 'JichangWiki 机场百科知识库',
+  titleTemplate: ':title | JichangWiki',
   description: '网络工具、代理客户端、协议百科、线路知识、故障诊断与新手指南专业技术知识库。',
   lang: 'zh-CN',
   base: '/',
@@ -39,16 +40,7 @@ export default defineConfig({
   ],
 
   transformPageData(pageData) {
-    const canonicalUrl = `${DOMAIN}/${pageData.relativePath}`
-      .replace(/index\.md$/, '')
-      .replace(/\.md$/, '')
-      .replace(/\/$/, '')
-
-    pageData.frontmatter.head = pageData.frontmatter.head || []
-    pageData.frontmatter.head.push(
-      ['link', { rel: 'canonical', href: canonicalUrl || DOMAIN }],
-      ['meta', { property: 'og:url', content: canonicalUrl || DOMAIN }]
-    )
+    applyPageSeoMetadata(pageData)
   },
 
   themeConfig: {
@@ -119,9 +111,8 @@ export default defineConfig({
       console.log(`[Sitemap] Generated sitemap.xml with ${htmlFiles.length} pages and valid lastmod.`)
 
       // IndexNow Key verification file
-      const indexNowKey = 'b38df94e751246b9a89c362145b45281'
-      fs.writeFileSync(path.join(outDir, `${indexNowKey}.txt`), indexNowKey, 'utf-8')
-      console.log(`[IndexNow] Generated key verification file: ${indexNowKey}.txt`)
+      fs.writeFileSync(path.join(outDir, `${INDEXNOW_KEY}.txt`), INDEXNOW_KEY, 'utf-8')
+      console.log(`[IndexNow] Generated key verification file: ${INDEXNOW_KEY}.txt`)
     } catch (err) {
       console.error('[Sitemap/IndexNow] Failed to generate:', err)
     }

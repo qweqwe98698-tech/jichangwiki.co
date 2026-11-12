@@ -1,6 +1,6 @@
 ---
 title: Google 搜索频繁弹出人机验证 (reCAPTCHA) 排查
-description: 解决使用 Google 搜索时频繁弹出“异常流量，请确认您不是机器人”的问题。
+description: 解决 Google 搜索频繁弹出“异常流量，请确认您不是机器人”：排查高倍率公用节点 IP 污染、开启分流与切换低风险落地实操。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

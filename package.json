@@ -9,6 +9,7 @@
     "index:search": "pagefind --site docs/.vitepress/dist",
     "build": "vitepress build docs && pagefind --site docs/.vitepress/dist",
     "seo:check": "node scripts/seo-health-check.mjs",
+    "indexnow:submit": "node scripts/submit-indexnow.mjs",
     "release": "npm run build && node scripts/seo-health-check.mjs",
     "preview": "vitepress preview docs"
   },

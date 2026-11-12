@@ -1,48 +1,37 @@
 ---
-title: TAG Internet 深度评测 - 全球 90+ 地区全 IEPL 专线旗舰
-description: TAG Internet 机场深度评测：线路架构、全球海量国家节点覆盖、流媒体与 AI 原生解锁实测、价格与优惠码。
-updated: 2026-08-18
-lastReviewed: 2026-08-18
+title: TAG Internet 历史评测参考存档 - 全球多地区节点服务架构说明
+description: TAG Internet 历史参考档案：说明其多地区节点与 IEPL 专线定位特征，未纳入 2026-08-11 现役测速样本库，附现役同等专线方案对比入口。
+updated: 2026-11-12
+lastReviewed: 2026-11-12
 difficulty: medium
 category: 深度评测
 ---
 
-<script setup>
-import { airportsData } from '../.vitepress/data/airportsData'
-const airport = airportsData.find(a => a.id === 'tag-internet')
-</script>
+# TAG Internet 历史评测参考（归档说明）
 
-<AirportDetailHeader v-if="airport" :airport="airport" />
+<WarningBox title="历史参考归档提示">
+该条目属于本站早期整理的历史资料参考，未包含在现役 42 家服务商实测测速快照与实时入口核验库之中。购买任何服务前，请以现役实测榜单与支持纯月付的方案为准。
+</WarningBox>
 
-## 🔍 品牌背景与定位
+## 🔍 品牌定位历史特征
 
-TAG Internet 是业界公认的**“节点国家博物馆”**，以覆盖全球 90 多个国家和地区的超广节点网络闻名。不论是主流的美日港新，还是冷门的非洲、南美、东南亚、东欧小众国家，TAG 几乎全部提供专属原生落地。
-
----
-
-## ⚙️ 网络架构实测
-
-- **传输链路**：全线采用国内优质 BGP 入口 + 跨境 **IEPL 纯内网专线**。
-- **晚高峰表现**：20:00~23:00 实测丢包率恒定在 0%~0.2%，物理光纤直通。
-- **解锁能力**：流媒体（Netflix 4K 非自制剧、Disney+）、OpenAI / ChatGPT、Claude 原生解锁率极高。
+TAG Internet 在行业早期讨论中以覆盖较多冷门国家与地区落地节点闻名，主要采用 BGP 入口搭配跨境内网专线。其入门月付门槛通常偏高，适合对小众国家（如南美、非洲、东欧）有特定外贸或业务需求的用户了解架构特点。
 
 ---
 
-## 💎 核心优缺点对比
+## ⚙️ 常见网络架构特征
 
-### ✅ 核心优势
-1. **全球节点最全**：外贸业务、全球社媒多账号运营与冷门区域访问首选。
-2. **晚高峰零拥堵**：全专线物理隔离，延迟曲线极其平滑。
-3. **客户端支持完善**：支持 Clash、Shadowrocket、v2rayN、Quantumult X 一键订阅。
-
-### ⚠️ 不足与注意事项
-1. **起步门槛较高**：起步月付 38 元起，适合对品质和覆盖面有刚需的用户。
+- **传输架构参考**：国内多线 BGP 入口搭配跨境 IEPL 专线。
+- **常见客户端兼容**：支持 Clash YAML、Shadowrocket、v2rayN 与 Quantumult X 等标准订阅导入。
+- **门槛注意事项**：高价位套餐与较长周期订阅需谨慎评估，首次接触任何新服务均建议优先寻找支持单月付费的方案试错。
 
 ---
 
-## 🎁 专属优惠与购买建议
+## 🔄 2026 现役已实测替代对比方向
 
-<CouponBox code="JICHANGWIKI" discount="9折优惠" />
+如果您当前正在寻找经过 `2026-08-11` 测速采样核验、且提供明确起步月付价格或地区多节点的服务商，建议直接查看：
 
-- **推荐套餐**：建议首次选择按月付费套餐（¥38/月），体验满意后再考虑季付或年付。
-- **直达入口**：[前往 TAG Internet 官网注册并订阅](https://jichangwiki.co/go/tag-internet)
+- **[2026 机场综合口碑排行榜（42 家现役对比）](/navigation/ranking)**
+- **[唯兔云深度评测](/reviews/v2yun)**：IPLC 专线多周期及 ¥19.9/150GB 日常纯月付方案。
+- **[光速云深度评测](/reviews/guangsuyun)**：2020 年起老牌 IEPL+企业内网双专线，6 张实测与解锁图核验，全平台双端支持。
+- **[全 IEPL 专线高端机场推荐专题](/recommend/iepl-airports)**

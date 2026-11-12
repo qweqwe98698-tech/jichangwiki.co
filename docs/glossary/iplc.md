@@ -1,5 +1,5 @@
 ---
-title: IPLC 物理专线 (International Private Leased Circuit) - 物理层裸纤架构与极低延迟
+title: IPLC 物理专线架构原理解析：物理层裸纤与极低抖动选型指南
 description: 深度解析 IPLC 物理层点对点裸光纤专线技术架构、与 IEPL 以太网专线的底层硬件差异、极低物理延迟与旗舰机场推荐。
 updated: 2026-08-18
 lastReviewed: 2026-08-18

@@ -1,6 +1,6 @@
 ---
 title: 服务条款 (Terms of Service)
-description: JichangWiki.co 网站使用条款、知识共享协议与知识产权声明。
+description: JichangWiki.co 网站使用条款：明确独立技术百科使用规范、开源知识共享协议、内容版权引用准则与免责声明。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

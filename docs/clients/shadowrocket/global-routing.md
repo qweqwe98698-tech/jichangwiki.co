@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket 全局路由模式详解
-description: 详细解析小火箭首页的「配置」、「代理」、「直连」与「场景」四大全局路由模式区别及推荐设置。
+description: Shadowrocket 全局路由模式深度解析：对比「配置（分流）」、「代理（全局）」、「直连」与「场景」模式适用环境与省流建议。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

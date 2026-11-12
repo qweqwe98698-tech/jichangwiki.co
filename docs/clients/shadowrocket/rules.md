@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket 分流规则与配置模块
-description: 掌握小火箭的规则语法、远程规则集导入、广告拦截模块与自定义分流策略。
+description: Shadowrocket 小火箭分流规则实战教程：掌握基础语法规则、远程分流规则集导入、广告拦截策略与国内直连防断流配置。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

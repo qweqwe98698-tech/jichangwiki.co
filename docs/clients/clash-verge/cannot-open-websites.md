@@ -1,6 +1,6 @@
 ---
 title: Clash Verge 连接成功但打不开网页排查
-description: 节点测速延迟正常、客户端显示运行中，但浏览器依然无法加载任何网页或提示代理错误的完整排查流程。
+description: Clash Verge 节点延迟正常但打不开网页排查：系统代理残留、TUN 虚拟网卡冲突、浏览器扩展死循环与 DNS 劫持诊断解决流程。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

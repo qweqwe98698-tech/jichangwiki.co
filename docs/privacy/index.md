@@ -1,6 +1,6 @@
 ---
 title: 隐私政策 (Privacy Policy)
-description: JichangWiki.co 网站访问者的隐私保护政策、无 Cookie 追踪声明与数据安全说明。
+description: JichangWiki.co 隐私保护政策：说明网站坚持无第三方商业 Cookie 追踪、不收集个人隐私数据与保障技术知识库访问安全声明。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

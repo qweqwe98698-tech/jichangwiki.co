@@ -45,7 +45,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useRoute } from 'vitepress'
-import { knowledgeGraph, type ArticleRelation } from '../../data/relatedData'
+import { resolveArticleRelation, type ArticleRelation } from '../../data/relatedData'
 
 const props = defineProps<{
   customRelation?: ArticleRelation
@@ -55,8 +55,7 @@ const route = useRoute()
 
 const relation = computed<ArticleRelation | undefined>(() => {
   if (props.customRelation) return props.customRelation
-  const currentPath = route.path.replace(/\.html$/, '').replace(/\/$/, '')
-  return knowledgeGraph[currentPath] || knowledgeGraph[currentPath + '/']
+  return resolveArticleRelation(route.path)
 })
 </script>
 

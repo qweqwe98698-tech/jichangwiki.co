@@ -31,14 +31,14 @@
     <!-- Aside Bottom: High Value Internal Links -->
     <template #aside-outline-after>
       <div class="aside-related-box">
-        <div class="aside-related-title">🌟 2026 推荐与导航</div>
+        <div class="aside-related-title">🌟 核心专题与排错直达</div>
         <ul class="aside-related-list">
           <li><a href="/recommend/" class="highlight-link">2026 年度最佳机场推荐</a></li>
-          <li><a href="/navigation/ranking">2026 机场综合排行榜</a></li>
-          <li><a href="/recommend/iepl-airports">全 IEPL 专线高端机场</a></li>
-          <li><a href="/recommend/cheap-airports">便宜高性价比机场 (5~15元)</a></li>
-          <li><a href="/recommend/pay-as-you-go">不限时按量付费备用机场</a></li>
-          <li><a href="/reviews/">机场深度评测与优惠码</a></li>
+          <li><a href="/navigation/ranking">2026 机场综合口碑排行榜</a></li>
+          <li><a href="/clients/clash-verge/import-subscription">Clash Verge 订阅导入全指南</a></li>
+          <li><a href="/troubleshooting/all-nodes-timeout">节点全部超时 (Timeout) 排查</a></li>
+          <li><a href="/guides/how-to-choose-node">地区节点推荐与选择指南</a></li>
+          <li><a href="/reviews/">42 家品牌深度评测档案</a></li>
         </ul>
       </div>
     </template>
@@ -130,6 +130,8 @@ import ContextualRecommend from './components/ContextualRecommend.vue'
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   background: #11161E;
   border: 1px solid #1C2430;
   border-radius: 6px;

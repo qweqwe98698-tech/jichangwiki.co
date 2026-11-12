@@ -90,27 +90,28 @@ interface SearchResultItem {
 const results = ref<SearchResultItem[]>([])
 
 const hotKeywords = [
+  'Clash Verge 订阅',
+  '2026 机场推荐',
   '节点全部超时',
-  'Clash Verge',
+  '节点推荐',
+  '更新订阅失败',
   'Shadowrocket',
   'v2rayN',
-  '更新订阅失败',
-  'VLESS',
   'IEPL 专线',
-  '已连接打不开网页',
-  'TUN 模式'
+  'VLESS'
 ]
 
 // Fallback search index for dev mode before pagefind builds
 const devSearchFallback: SearchResultItem[] = [
-  { url: '/troubleshooting/all-nodes-timeout', rawTitle: '节点全部超时 (Timeout / 全红) 深度排查指南', excerpt: '系统时间偏差、订阅链接失效、TLS证书校验与防火墙拦截' },
+  { url: '/recommend/', rawTitle: '2026 年度最佳机场推荐总榜', excerpt: 'IEPL 专线精选、高性价比月付、按量备用与 AI/流媒体机场推荐对比' },
+  { url: '/clients/clash-verge/import-subscription', rawTitle: 'Clash Verge 订阅怎么导入？订阅链接获取与教程', excerpt: '复制 Clash YAML 订阅 URL、导入 Profile、自动更新与报错排查' },
+  { url: '/troubleshooting/all-nodes-timeout', rawTitle: '节点全部超时 (Timeout / -1ms / 全红) 怎么办？', excerpt: '系统时间偏差、订阅链接失效、TLS证书校验与防火墙拦截 5 步排查' },
+  { url: '/guides/how-to-choose-node', rawTitle: '如何选择合适的节点与国家地区？（节点推荐）', excerpt: '香港、日本、新加坡、美国节点的延迟、AI 解锁与流媒体差异' },
   { url: '/clients/clash-verge/', rawTitle: 'Clash Verge / Verge Rev 完整中文知识库', excerpt: '现代轻量 GUI，内置 Mihomo 内核，支持 TUN 模式与脚本扩展' },
   { url: '/clients/shadowrocket/', rawTitle: 'Shadowrocket 小火箭完整知识库', excerpt: 'iOS 普及率最高的客户端，支持节点导入、分流规则与 DNS 优化' },
   { url: '/clients/v2rayn/', rawTitle: 'v2rayN (Windows) 完整知识树', excerpt: '经典 Windows GUI 客户端，支持 Xray / sing-box 双内核与丰富分流规则' },
   { url: '/protocols/vless', rawTitle: 'VLESS 协议技术百科', excerpt: '去除了 VMess 繁重对称加密设计，依托底层 TLS/XTLS 保证安全性' },
-  { url: '/network/iepl', rawTitle: 'IEPL 内网专线技术百科', excerpt: '国际以太网专线，国内入口走内网专线直达境外落地，不过 GFW' },
-  { url: '/subscription/what-is-subscription', rawTitle: '什么是订阅与节点聚合', excerpt: '将成百上千个代理节点配置封装为一个 URL 地址便于批量更新' },
-  { url: '/troubleshooting/connected-but-no-internet', rawTitle: '已连接代理但打不开网页排查', excerpt: '系统代理环境变量残留、TUN 虚拟网卡 DNS 劫持冲突与分流规则' }
+  { url: '/network/iepl', rawTitle: 'IEPL 内网专线技术百科', excerpt: '国际以太网专线，国内入口走内网专线直达境外落地，不过 GFW' }
 ]
 
 function openSearch() {
@@ -182,6 +183,9 @@ function navigateSelected() {
 }
 
 function resolveCategory(url: string) {
+  if (url.includes('/recommend/')) return '机场推荐'
+  if (url.includes('/navigation/')) return '机场导航'
+  if (url.includes('/reviews/')) return '深度评测'
   if (url.includes('/clients/')) return '客户端'
   if (url.includes('/protocols/')) return '协议百科'
   if (url.includes('/network/')) return '线路知识'
@@ -189,6 +193,7 @@ function resolveCategory(url: string) {
   if (url.includes('/troubleshooting/')) return '故障诊断'
   if (url.includes('/scenarios/')) return '使用场景'
   if (url.includes('/guides/')) return '选择指南'
+  if (url.includes('/glossary/')) return '百科词典'
   if (url.includes('/start/')) return '新手入门'
   return '知识条目'
 }
@@ -210,6 +215,16 @@ onMounted(() => {
   window.addEventListener('open-jichang-search', openSearch)
 
   // Dynamically load pagefind.js in production browser environment
+  if (typeof window !== 'undefined') {
+    const params = new URLSearchParams(window.location.search)
+    const initialQuery = params.get('q')?.trim()
+    if (initialQuery) {
+      query.value = initialQuery
+      openSearch()
+      handleSearch()
+    }
+  }
+
   if (typeof window !== 'undefined' && !((window as any).pagefind)) {
     try {
       const dynamicImport = new Function('url', 'return import(url)')
@@ -217,6 +232,7 @@ onMounted(() => {
         .then((module: any) => {
           ;(window as any).pagefind = module
           module.init?.()
+          if (query.value.trim()) handleSearch()
         })
         .catch(() => {
           // Dev mode where pagefind bundle isn't generated yet

@@ -1,6 +1,6 @@
 ---
 title: 如何选择最适合的代理协议？- 场景化选型指南
-description: 依据网络环境（高丢包/严审查/内网专线）、设备算力与客户端兼容性选择最优协议。
+description: 如何选择适合自己的代理协议：横向对比 VLESS、Shadowsocks、Hysteria 2、Trojan 在加密开销、抗封锁能力与晚高峰吞吐表现。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

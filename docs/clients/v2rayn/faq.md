@@ -1,6 +1,6 @@
 ---
 title: v2rayN 综合问题 FAQ 汇总
-description: 汇总 Windows 用户在使用 v2rayN 过程中的高频配置、核心切换、快捷键与疑难解答。
+description: v2rayN 高频常见问题与疑难解答 FAQ：汇总 Windows 用户关注的核心切换（Xray/sing-box）、快捷键、开机自启与分流规则避坑。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

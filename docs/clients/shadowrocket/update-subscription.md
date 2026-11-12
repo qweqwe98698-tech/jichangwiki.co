@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket 更新订阅与自动更新策略
-description: 如何在小火箭中下拉一键刷新订阅、配置打开应用时自动更新以及解决订阅过期维护问题。
+description: Shadowrocket 小火箭更新订阅详细步骤：支持下拉一键刷新、开启启动时自动同步，并附订阅链接失效或无法拉取节点故障排查。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

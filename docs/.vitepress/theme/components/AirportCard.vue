@@ -1,16 +1,22 @@
 <template>
-  <div class="airport-card" :class="`border-${airport.badgeColor || 'cyan'}`">
+  <article class="airport-card">
     <div class="card-header">
-      <div class="brand-meta">
-        <span v-if="airport.recommendedBadge" class="badge-tag" :class="`badge-${airport.badgeColor || 'cyan'}`">
-          {{ airport.recommendedBadge }}
-        </span>
+      <div class="title-group">
+        <div class="card-badges">
+          <span class="rank-pill" :class="{ 'is-top1': airport.rank === 1 }">
+            {{ airport.rank === 1 ? 'Top 1 主推' : `#${airport.rank}` }}
+          </span>
+          <span v-if="airport.recommendedBadge" class="badge-tag" :class="badgeClass">
+            {{ airport.recommendedBadge }}
+          </span>
+          <span v-if="imageCount > 0" class="img-count-pill">📷 {{ imageCount }}图实测</span>
+        </div>
         <h3 class="brand-name">{{ airport.name }}</h3>
         <p class="brand-tagline">{{ airport.tagline }}</p>
       </div>
 
       <div class="price-box">
-        <span class="price-label">起步价格</span>
+        <span class="price-label">参考起步价</span>
         <div class="price-value">
           <span class="currency">¥</span>
           <span class="amount">{{ airport.startingPrice }}</span>
@@ -20,55 +26,74 @@
       </div>
     </div>
 
-    <!-- Specs Grid -->
+    <div v-if="airport.priceNote" class="price-note-bar">
+      计费口径：{{ airport.priceNote }}
+    </div>
+
     <div class="specs-grid">
       <div class="spec-item">
-        <span class="spec-label">线路架构</span>
+        <span class="spec-label">底层网络线路</span>
         <span class="spec-val highlight-cyan">{{ airport.networkType }}</span>
       </div>
       <div class="spec-item">
-        <span class="spec-label">晚高峰评级</span>
-        <span class="spec-val speed-badge">{{ airport.speedRating }}</span>
+        <span class="spec-label">客户端支持</span>
+        <span class="spec-val">{{ airport.clientSupport }}</span>
       </div>
       <div class="spec-item">
-        <span class="spec-label">支持协议</span>
-        <span class="spec-val">{{ airport.protocols.join(', ') }}</span>
+        <span class="spec-label">测速评级 / 计费</span>
+        <span class="spec-val speed-badge">
+          {{ airport.speedRating === '待测' ? '待测' : airport.speedRating }} · {{ airport.monthlyPay ? '纯月付' : '多周期' }}
+        </span>
       </div>
       <div class="spec-item">
-        <span class="spec-label">综合评分</span>
-        <span class="spec-val rating-val">⭐ {{ airport.rating }}</span>
+        <span class="spec-label">综合推荐度</span>
+        <span class="spec-val rating-val">{{ airport.rating.toFixed(1) }} / 5.0</span>
       </div>
     </div>
 
-    <!-- Scenarios -->
     <div class="scenarios-row">
-      <span class="scenario-label">精选解锁：</span>
+      <span class="scenario-label">适用场景：</span>
       <div class="scenario-tags">
         <span v-for="s in airport.scenarios" :key="s" class="s-tag">{{ s }}</span>
       </div>
     </div>
 
-    <!-- Actions -->
     <div class="card-actions">
-      <div v-if="airport.couponCode" class="coupon-pill" @click="copyCoupon">
-        <span class="coupon-title">优惠码: <code>{{ airport.couponCode }}</code></span>
-        <span class="copy-hint">{{ copied ? '已复制!' : '点击复制' }}</span>
-      </div>
+      <button
+        v-if="airport.couponCode"
+        type="button"
+        class="coupon-pill"
+        @click="copyCoupon(airport.couponCode)"
+        title="点击复制优惠码"
+      >
+        <span class="coupon-title">
+          优惠码 <code>{{ airport.couponCode }}</code>
+          <template v-if="airport.altCouponCode"> / {{ airport.altCouponCode }}</template>
+        </span>
+        <span class="copy-hint">{{ copied ? '已复制 ✓' : '点击复制' }}</span>
+      </button>
+      <div v-else class="no-coupon-note">按官网实时标价购买（含合作外链标识）</div>
 
       <div class="action-buttons">
-        <a :href="airport.reviewUrl" class="btn-review">查看评测报告</a>
-        <a :href="airport.affUrl" target="_blank" rel="noopener noreferrer nofollow sponsored" class="btn-visit">
-          直达官网注册
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <a :href="airport.reviewUrl" class="btn-review">深度评测</a>
+        <a
+          v-if="airport.affUrl"
+          :href="airport.affUrl"
+          target="_blank"
+          rel="noopener noreferrer nofollow sponsored"
+          class="btn-visit"
+        >
+          前往官网 →
         </a>
+        <span v-else class="btn-visit-disabled">入口待补充</span>
       </div>
     </div>
-  </div>
+  </article>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import type { AirportItem } from '../../data/airportsData'
+import { ref, computed } from 'vue'
+import type { AirportItem } from '../../data/airports/types'
 
 const props = defineProps<{
   airport: AirportItem
@@ -76,9 +101,26 @@ const props = defineProps<{
 
 const copied = ref(false)
 
-const copyCoupon = () => {
-  if (props.airport.couponCode) {
-    navigator.clipboard.writeText(props.airport.couponCode)
+const imageCount = computed(() => {
+  if (props.airport.testGallery && props.airport.testGallery.length > 0) {
+    return props.airport.testGallery.length
+  }
+  return props.airport.speedtestImage ? 1 : 0
+})
+
+const badgeClass = computed(() => {
+  switch (props.airport.badgeColor) {
+    case 'amber': return 'badge-amber'
+    case 'green': return 'badge-green'
+    case 'purple': return 'badge-purple'
+    case 'red': return 'badge-red'
+    default: return 'badge-cyan'
+  }
+})
+
+function copyCoupon(code: string) {
+  if (typeof navigator !== 'undefined' && navigator.clipboard) {
+    navigator.clipboard.writeText(code)
     copied.value = true
     setTimeout(() => {
       copied.value = false
@@ -89,19 +131,16 @@ const copyCoupon = () => {
 
 <style scoped>
 .airport-card {
-  background: #11151A;
-  border: 1px solid #1E2734;
+  background: linear-gradient(145deg, #10151C 0%, #0D1117 100%);
+  border: 1px solid #1E293B;
   border-radius: 12px;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  transition: all 0.2s ease;
-  position: relative;
+  padding: 1.35rem;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.2s ease, transform 0.15s ease;
 }
 
 .airport-card:hover {
-  border-color: #2D3B4D;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  border-color: rgba(0, 229, 255, 0.45);
 }
 
 .card-header {
@@ -109,13 +148,47 @@ const copyCoupon = () => {
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
-  margin-bottom: 1.25rem;
   flex-wrap: wrap;
+  margin-bottom: 0.75rem;
 }
 
-.brand-meta {
+.title-group {
   flex: 1;
-  min-width: 240px;
+  min-width: 220px;
+}
+
+.card-badges {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.45rem;
+}
+
+.rank-pill {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #CBD5E1;
+  background: #1C2533;
+  border: 1px solid #2D3B4E;
+  padding: 0.14rem 0.48rem;
+  border-radius: 4px;
+}
+
+.rank-pill.is-top1 {
+  color: #091016;
+  background: #00E5FF;
+  border-color: #00E5FF;
+}
+
+.img-count-pill {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #34D399;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  padding: 0.14rem 0.48rem;
+  border-radius: 4px;
 }
 
 .badge-tag {
@@ -124,7 +197,6 @@ const copyCoupon = () => {
   font-weight: 700;
   padding: 0.15rem 0.5rem;
   border-radius: 4px;
-  margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
 
@@ -132,6 +204,7 @@ const copyCoupon = () => {
 .badge-amber { background: rgba(245, 158, 11, 0.12); color: #FBBF24; border: 1px solid rgba(245, 158, 11, 0.3); }
 .badge-green { background: rgba(16, 185, 129, 0.12); color: #34D399; border: 1px solid rgba(16, 185, 129, 0.3); }
 .badge-purple { background: rgba(168, 85, 247, 0.12); color: #C084FC; border: 1px solid rgba(168, 85, 247, 0.3); }
+.badge-red { background: rgba(239, 68, 68, 0.12); color: #F87171; border: 1px solid rgba(239, 68, 68, 0.3); }
 
 .brand-name {
   font-size: 1.35rem !important;
@@ -194,10 +267,20 @@ const copyCoupon = () => {
   color: #38BDF8;
 }
 
+.price-note-bar {
+  font-size: 0.76rem;
+  color: #94A3B8;
+  background: #121821;
+  border-left: 2px solid #38BDF8;
+  padding: 0.38rem 0.7rem;
+  border-radius: 0 5px 5px 0;
+  margin-bottom: 0.9rem;
+}
+
 /* Specs */
 .specs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
   gap: 0.75rem;
   background: #0D1117;
   border: 1px solid #1A222E;
@@ -313,6 +396,11 @@ const copyCoupon = () => {
   color: #38BDF8;
 }
 
+.no-coupon-note {
+  font-size: 0.78rem;
+  color: #94A3B8;
+}
+
 .action-buttons {
   display: flex;
   align-items: center;
@@ -354,5 +442,14 @@ const copyCoupon = () => {
 .btn-visit:hover {
   background: #33EBFF;
   box-shadow: 0 0 14px rgba(0, 229, 255, 0.4);
+}
+
+.btn-visit-disabled {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.82rem;
+  color: #94A3B8;
+  background: #161B22;
+  border: 1px dashed #334155;
+  border-radius: 6px;
 }
 </style>

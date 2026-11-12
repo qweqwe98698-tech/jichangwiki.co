@@ -1,6 +1,6 @@
 ---
 title: 什么是订阅？- 订阅链接、工作原理与格式分类
-description: 深入解析代理订阅的定义、订阅链接的作用、常见订阅格式以及为什么需要定期更新订阅。
+description: 什么是代理订阅链接？详解订阅下发机制、Base64 与 YAML 配置格式、动态解析节点地址原理及定期更新订阅的必要性。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

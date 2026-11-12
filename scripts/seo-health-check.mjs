@@ -207,13 +207,16 @@ if (suspiciousFiles.length > 0) {
 
 // 8. IndexNow verification
 console.log('\n[8/9] Checking IndexNow readiness...')
-const indexNowKeyFile = path.join(DIST_DIR, 'b38df94e751246b9a89c362145b45281.txt')
+const categoriesContent = fs.readFileSync(path.join('docs', '.vitepress', 'data', 'categories.ts'), 'utf-8')
+const keyMatch = categoriesContent.match(/export const INDEXNOW_KEY = ['"]([a-zA-Z0-9-]+)['"]/)
+const expectedIndexNowKey = keyMatch ? keyMatch[1] : ''
+const indexNowKeyFile = expectedIndexNowKey ? path.join(DIST_DIR, `${expectedIndexNowKey}.txt`) : ''
 let indexNowPass = false
-if (fs.existsSync(indexNowKeyFile)) {
+if (expectedIndexNowKey && fs.existsSync(indexNowKeyFile) && fs.readFileSync(indexNowKeyFile, 'utf-8').trim() === expectedIndexNowKey) {
   indexNowPass = true
-  console.log('  ✅ IndexNow verification key file is active and present.')
+  console.log(`  ✅ IndexNow verification key file is active and verified (${expectedIndexNowKey}.txt).`)
 } else {
-  warnings.push('IndexNow key file is not present in dist.')
+  warnings.push('IndexNow key file is missing or content mismatches INDEXNOW_KEY in dist.')
 }
 
 // 9. Final Decision
@@ -230,7 +233,7 @@ console.log(`Sitemap:          ${sitemapPass ? 'PASS (' + sitemapUrls.length + '
 console.log(`Internal Links:   ${deadLinkCount === 0 ? 'PASS (0 dead links)' : 'FAIL'}`)
 console.log(`Schema / JSON-LD: PASS (Valid WebSite Schema)`)
 console.log(`Duplicate Titles: ${duplicateTitleCount === 0 ? 'PASS' : 'WARN (' + duplicateTitleCount + ')'}`)
-console.log(`Page Count:       PASS (223 indexable pages)`)
+console.log(`Page Count:       PASS (${sitemapUrls.length} indexable pages)`)
 console.log(`IndexNow:         ${indexNowPass ? 'PASS' : 'WARN'}`)
 
 console.log('='.repeat(70))

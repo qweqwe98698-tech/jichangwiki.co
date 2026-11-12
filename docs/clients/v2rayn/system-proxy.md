@@ -1,6 +1,6 @@
 ---
 title: v2rayN 系统代理设置与清除
-description: 掌握 v2rayN 底部状态栏「自动配置系统代理」与「清除系统代理」的区别，排查托盘红蓝图标状态。
+description: v2rayN 系统代理模式详解：区分「自动配置系统代理」与「清除系统代理」本质区别，排查托盘红蓝图标状态与环境变量残留问题。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

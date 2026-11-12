@@ -316,6 +316,23 @@ body {
   }
 }
 
+@media (max-width: 640px) {
+  .vp-doc h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .vp-doc table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .vp-doc div[class*="language-"] {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
 /* Navbar Brand & Logo */
 .VPNavBarTitle a.title {
   display: flex !important;

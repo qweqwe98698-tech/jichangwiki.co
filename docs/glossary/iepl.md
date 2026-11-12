@@ -1,5 +1,5 @@
 ---
-title: IEPL 内网专线 (International Ethernet Private Line) - 原理解析与选型
+title: IEPL 内网专线 (International Ethernet Private Line) 架构解析
 description: 深度解析 IEPL 二层以太网内网专线技术架构、不过公网 GFW 底层原理、晚高峰零丢包与 2026 稳定专线机场推荐。
 updated: 2026-08-18
 lastReviewed: 2026-08-18

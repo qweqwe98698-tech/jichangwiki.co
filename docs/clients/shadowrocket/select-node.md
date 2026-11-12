@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket 节点测速与智能选择
-description: 掌握小火箭的 TCP Ping、HTTP 延迟测试方法，如何根据国家地区与延迟结果选择最优节点。
+description: Shadowrocket 小火箭节点选择与测速指南：掌握 TCP Ping 与 HTTP 真连接延迟测试技巧，按流媒体、AI 与低延迟游戏选择最优落地。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

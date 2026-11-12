@@ -23,13 +23,14 @@ export const nav = [
   {
     text: '📊 深度评测',
     items: [
-      { text: '16 家品牌评测档案总览', link: '/reviews/' },
-      { text: '光速云 深度评测', link: '/reviews/guangsuyun' },
-      { text: '星岛梦 深度评测', link: '/reviews/xingdaomeng' },
-      { text: '灵猫网络 深度评测', link: '/reviews/civetnet' },
-      { text: '宇宙云 深度评测', link: '/reviews/yuzhoucloud' },
-      { text: '速界 深度评测', link: '/reviews/sujie' },
-      { text: 'SOGO 云 深度评测', link: '/reviews/sogoyun' }
+      { text: '42 家品牌评测档案库总览', link: '/reviews/' },
+      { text: '光速云 深度评测 (Top 1 主推)', link: '/reviews/guangsuyun' },
+      { text: '暮光加速 深度评测 (Top 2)', link: '/reviews/muguang' },
+      { text: '飞猫云 深度评测 (Top 3)', link: '/reviews/flycat' },
+      { text: '微风网络 深度评测 (Top 4)', link: '/reviews/weifeng' },
+      { text: '无忧链接 深度评测 (Top 8 · 双图)', link: '/reviews/wuyou' },
+      { text: '星岛梦 深度评测 (Top 6 · 按量)', link: '/reviews/xingdaomeng' },
+      { text: '2026 机场综合口碑排行榜', link: '/navigation/ranking' }
     ]
   },
   { text: '新手入门', link: '/start/' },
@@ -37,12 +38,12 @@ export const nav = [
     text: '客户端',
     items: [
       { text: '客户端总览矩阵', link: '/clients/' },
-      { text: 'Clash Verge (Rev)', link: '/clients/clash-verge/' },
+      { text: 'Clash Verge (Rev) 知识树', link: '/clients/clash-verge/' },
+      { text: 'Clash Verge 订阅导入与链接获取', link: '/clients/clash-verge/import-subscription' },
       { text: 'Shadowrocket (小火箭)', link: '/clients/shadowrocket/' },
       { text: 'v2rayN (Windows)', link: '/clients/v2rayn/' },
       { text: 'v2rayNG (Android)', link: '/clients/v2rayng/' },
-      { text: 'sing-box', link: '/clients/sing-box/' },
-      { text: 'Hiddify / Stash / Surge', link: '/clients/' }
+      { text: 'sing-box', link: '/clients/sing-box/' }
     ]
   },
   {
@@ -54,11 +55,20 @@ export const nav = [
       { text: '原生 IP 与住宅 IP', link: '/network/native-ip' }
     ]
   },
-  { text: '故障排查', link: '/troubleshooting/' },
+  {
+    text: '故障排查',
+    items: [
+      { text: '故障诊断中心总览', link: '/troubleshooting/' },
+      { text: '节点全部超时 (Timeout) 修复', link: '/troubleshooting/all-nodes-timeout' },
+      { text: '更新订阅失败排查', link: '/troubleshooting/subscription-update-failed' },
+      { text: '已连接但打不开网页', link: '/troubleshooting/connected-but-no-internet' }
+    ]
+  },
   {
     text: '更多',
     items: [
-      { text: '订阅知识', link: '/subscription/' },
+      { text: '地区节点推荐指南', link: '/guides/how-to-choose-node' },
+      { text: '订阅知识中心', link: '/subscription/' },
       { text: '使用场景', link: '/scenarios/' },
       { text: '选择指南', link: '/guides/' },
       { text: '百科词典', link: '/glossary/' },

@@ -1,0 +1,35 @@
+export const DOMAIN = 'https://jichangwiki.co'
+export const INDEXNOW_KEY = '5935c76c442e4b3bac49659fc27611d0'
+
+export const categoryNameMap: Record<string, string> = {
+  recommend: '机场推荐',
+  navigation: '机场导航',
+  reviews: '深度评测',
+  start: '新手入门',
+  clients: '客户端知识',
+  clash: 'Clash 系列',
+  'clash-verge': 'Clash Verge',
+  shadowrocket: 'Shadowrocket',
+  v2rayn: 'v2rayN',
+  v2rayng: 'v2rayNG',
+  'sing-box': 'sing-box',
+  hiddify: 'Hiddify',
+  stash: 'Stash',
+  surge: 'Surge',
+  'quantumult-x': 'Quantumult X',
+  nekobox: 'NekoBox',
+  loon: 'Loon',
+  protocols: '协议百科',
+  network: '线路知识',
+  subscription: '订阅知识',
+  troubleshooting: '故障排查',
+  scenarios: '使用场景',
+  guides: '选择指南',
+  glossary: '百科词典',
+  about: '关于本站',
+  'editorial-policy': '编辑规范',
+  sources: '数据来源',
+  disclaimer: '免责声明',
+  privacy: '隐私政策',
+  terms: '服务条款'
+}

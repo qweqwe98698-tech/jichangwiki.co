@@ -1,14 +1,14 @@
 ---
 layout: page
-title: JichangWiki - 2026 最新机场推荐、机场代理评测与网址导航全景百科
-description: 2026 权威机场推荐、机场代理评测与实时导航知识库。精选 IEPL 专线机场、便宜高性价比月付机场、不限时按量备用机场，附 Clash、小火箭、v2rayN 配置教程与故障排查。
+title: 2026 机场推荐与代理深度评测、Clash Verge 订阅与网络导航百科
+description: JichangWiki.co 中文网络工具与代理技术百科：提供 2026 机场推荐与 42 家品牌全景实测对比、机场网址导航、Clash Verge 订阅导入教程、节点地区推荐及 Timeout 故障排查。
 ---
 
 <script setup>
 import { airportsData } from './.vitepress/data/airportsData'
 const guangsu = airportsData.find(a => a.id === 'guangsuyun')
-const civet = airportsData.find(a => a.id === 'civetnet')
-const yuzhou = airportsData.find(a => a.id === 'yuzhoucloud')
+const weifeng = airportsData.find(a => a.id === 'weifeng')
+const wuyou = airportsData.find(a => a.id === 'wuyou')
 </script>
 
 <div class="home-hero-container">
@@ -25,14 +25,14 @@ const yuzhou = airportsData.find(a => a.id === 'yuzhoucloud')
 </div>
 
 <div class="hero-hot-tags">
-<span class="tag-label">热搜榜：</span>
-<a href="/recommend/" class="hero-tag tag-hot">2026 最佳机场推荐</a>
-<a href="/navigation/ranking" class="hero-tag tag-hot">2026 综合排行榜</a>
+<span class="tag-label">热搜直达：</span>
+<a href="/recommend/" class="hero-tag tag-hot">2026 机场推荐总榜</a>
+<a href="/clients/clash-verge/import-subscription" class="hero-tag tag-hot">Clash Verge 订阅教程</a>
+<a href="/troubleshooting/all-nodes-timeout" class="hero-tag">节点超时 Timeout</a>
+<a href="/guides/how-to-choose-node" class="hero-tag">地区节点推荐</a>
 <a href="/recommend/iepl-airports" class="hero-tag">全 IEPL 专线</a>
-<a href="/recommend/cheap-airports" class="hero-tag">便宜高性价比 (5~15元)</a>
+<a href="/recommend/cheap-airports" class="hero-tag">平价月付 (5~15元)</a>
 <a href="/recommend/pay-as-you-go" class="hero-tag">不限时按量备用</a>
-<a href="/recommend/chatgpt-airport" class="hero-tag">ChatGPT / AI 解锁</a>
-<a href="/troubleshooting/all-nodes-timeout" class="hero-tag">节点全部超时</a>
 </div>
 </div>
 </div>
@@ -96,7 +96,7 @@ const yuzhou = airportsData.find(a => a.id === 'yuzhoucloud')
 </div>
 </div>
 
-<AirportRankingTable />
+<AirportRankingTable defaultScope="top10" />
 </div>
 
 <!-- Featured Recommendation Cards -->
@@ -112,8 +112,8 @@ const yuzhou = airportsData.find(a => a.id === 'yuzhoucloud')
 </div>
 
 <AirportCard v-if="guangsu" :airport="guangsu" />
-<AirportCard v-if="civet" :airport="civet" />
-<AirportCard v-if="yuzhou" :airport="yuzhou" />
+<AirportCard v-if="weifeng" :airport="weifeng" />
+<AirportCard v-if="wuyou" :airport="wuyou" />
 </div>
 
 <!-- Interactive Diagnostic Tool -->
@@ -195,10 +195,10 @@ const yuzhou = airportsData.find(a => a.id === 'yuzhoucloud')
 <!-- Editorial Commitment -->
 <div class="editorial-banner">
 <div class="banner-inner">
-<div class="banner-badge">独立百科与评测承诺</div>
-<h3 class="banner-title">客观、透明、基于真实测试数据</h3>
+<div class="banner-badge">独立百科与评测透明度说明</div>
+<h3 class="banner-title">基于单日抓包快照与公开技术规范，区分百科与推广推荐</h3>
 <p class="banner-desc">
-JichangWiki 坚持技术与真实实测驱动。所有评测均基于真实抓包与晚高峰并发测速，严禁编造虚假数据。
+JichangWiki 坚持信息型百科与商业评测清晰分层：协议、订阅与排错指南专注于客观技术方案；机场榜单与品牌评测基于 2026-08-11 实测抓包快照与条款核验，部分推荐入口包含推广合作链接（已明确标注），不会影响技术故障排查的中立性。
 </p>
 <div class="banner-links">
 <a href="/about/">关于本站</a>

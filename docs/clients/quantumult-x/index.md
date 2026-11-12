@@ -1,23 +1,72 @@
 ---
-title: Quantumult X (圈X) 知识中心
-description: 经典 iOS 代理应用 Quantumult X 的策略组分流、重写机制 (Rewrite)、JS 脚本引擎与使用指南。
-updated: 2026-08-18
-lastReviewed: 2026-08-18
+title: Quantumult X (圈X) 客户端指南 - 策略组、HTTP 重写与脚本引擎定位解析
+description: 解析经典 iOS 网络工具 Quantumult X（圈X）的核心能力、服务器节点订阅与分流策略体系区别、与其他苹果端工具对比及订阅导入常见误区。
+updated: 2026-11-12
+lastReviewed: 2026-11-12
 difficulty: hard
+category: 客户端指南
 client: Quantumult X
 platform: iOS
+faq:
+  - q: 新手刚买 iPhone 梯子，应该买 Quantumult X 还是 Shadowrocket（小火箭）？
+    a: 绝大多数纯为了看网页、看视频、用 AI 的新手建议首选 Shadowrocket（小火箭），价格更低且所有机场全量兼容；Quantumult X 上手需要理解策略组、分流规则列表、重写和 MITM 证书，适合明确需要脚本微调的进阶玩家。
+  - q: 我把机场订阅链接贴进 Quantumult X 的哪里？为什么贴完没有自动分流？
+    a: 圈X 与 Clash 不同：在「节点 ➔ 引用（订阅）」里粘贴订阅通常只导入节点列表；要实现自动判断国内外站点的「规则分流」，还需要在「分流 ➔ 引用」配置规则集（或直接套用机场下发的完整圈X配置文件）。
+  - q: 机场官网没写支持 Quantumult X，节点还能在圈X里用吗？
+    a: 部分机场虽然没提供完整托管模板，但其标准机场节点往往也能通过圈X通用解析，或利用本地受信任方式转成圈X订阅列表；不过要留意部分更新颖协议（如部分变体 Hysteria2/VLESS）的圈X版本兼容度，提前检查 App 版本升级。
 ---
 
-# Quantumult X (圈X) 知识中心
+# Quantumult X (圈X) 知识中心与配置指南
 
-<AnswerBox question="什么是 Quantumult X（圈X）？">
-Quantumult X（简称 QX 或圈X）是 iOS 平台上功能强大的网络代理工具。它以精美的美工设计、强大的策略组分流架构以及丰富的 JavaScript 脚本重写能力闻名，适合对网络分流有深度定制需求的用户。
+<AnswerBox question="Quantumult X（圈X）适合谁？和日常普通代理工具区别在哪？">
+<strong>Quantumult X</strong>（简称 QX / 圈X，App Store 参考售价 $7.99）是 iOS 上主打<strong>精细策略路由 + HTTP Rewrite（流量重写）+ JavaScript 脚本自动化</strong>的高阶网络工具。<br>
+如果你只想要简单稳定的高速翻墙工具，购买 <a href="/clients/shadowrocket/">Shadowrocket</a> 会轻松许多；只有当你需要去开屏广告、抓包改包体或做高度自定义策略测试时，圈X 才能发挥出真正实力。
 </AnswerBox>
 
 ---
 
-## ⚡ 核心能力
+## 一、看懂 Quantumult X 的四层核心配置框架
 
-- **强大的策略分流 (Policy)**：支持多级策略嵌套、静态策略、负载均衡与延迟测试自动优选。
-- **HTTP 重写与脚本引擎 (Rewrite & Scripting)**：支持自定义修改 HTTP 请求 Header、Body 以及注入自定义自动化脚本。
-- **精准的流量与连接统计**：主界面提供直观的实时上下行带宽折线图与节点连接拓扑。
+不同于「导入一条链接就管全部」的傻瓜式客户端，圈X 的设计将网络规则严格模块化拆分成四部分：
+
+1. **服务器列表（Server / 节点订阅）**：负责管理你从机场导入的所有海外节点；通常在配置界面底部点进「节点 ➔ 引用」维护机场节点源。
+2. **分流规则（Filter）与策略组（Policy）**：真正决定什么域名走“国内直连（direct）”、什么走“代理组”、什么屏蔽广告（reject）。
+3. **重写规则（Rewrite）与 MitM 解密**：允许对特定的 HTTP/HTTPS 请求头、返回结果进行实时修改（也是许多社区去广告/解锁脚本依赖的核心组件）。
+4. **JavaScript 脚本引擎与定时任务（Task）**：能在固定时间或响应命中时执行自动化的轻量 JS 逻辑。
+
+---
+
+## 二、常见 iOS 客户端功能边界比较
+
+| 工具 | 核心特长 | 上手难度 | 对机场新协议兼容响应 |
+| :--- | :--- | :--- | :--- |
+| **[Shadowrocket](/clients/shadowrocket/)** | 开箱即用、轻量省电、机场 100% 适配 | 极低 | 极快（新协议几乎同步跟进） |
+| **Quantumult X** | 强大重写/脚本社区、实时网速折线与详细分流日志 | 偏高 | 中~快（依赖版本更新与特定写法） |
+| **[Loon](/clients/loon/)** | 模块化插件库替代繁琐手动改配置、界面美观 | 中 | 快 |
+| **[Stash](/clients/stash/)** | 完整运行标准 Clash YAML 配置，桌面/iOS 同配置 | 低~中 | 跟随 Clash 生态极快 |
+
+---
+
+## 三、Quantumult X 新手导入订阅最常踩的 3 个坑
+
+1. **只加了节点订阅，没设置分流，结果所有请求全直连/全全局**  
+   圈X 如果仅在「服务器/引用」里加入机场节点的 Base64 列表，顶多拿到服务器；务必同时确认「配置文件」或「分流引用」内存在正确的分流规则指向你的策略组。
+2. **忽略右下角三态运行模式按钮**  
+   长按或点击右下角图标可切换：**全部直连**、**规则分流**、**全部代理**。很多用户以为导入好节点开了 VPN 开关却没改掉「全部直连」，当然无法翻墙！
+3. **没有检查网络时间或机场已停服**：如果策略全部正常配置、运行模式也在规则分流上，节点延迟却大面积红字或 `Timeout`，优先顺着 [全节点超时通用排查流程](/troubleshooting/all-nodes-timeout) 核验机场套餐状态与系统时钟。
+
+---
+
+## 常见问题解答（FAQ）
+
+### 新手刚买 iPhone 梯子，应该买 Quantumult X 还是 Shadowrocket（小火箭）？
+
+绝大多数纯为了看网页、看视频、用 AI 的新手建议首选 [Shadowrocket（小火箭）](/clients/shadowrocket/)，价格更低且所有机场全量兼容；Quantumult X 上手需要理解策略组、分流规则列表、重写和 MitM 证书，适合明确需要脚本微调的进阶玩家。
+
+### 我把机场订阅链接贴进 Quantumult X 的哪里？为什么贴完没有自动分流？
+
+圈X 与 Clash 不同：在「节点 ➔ 引用（订阅）」里粘贴订阅通常只导入节点列表；要实现自动判断国内外站点的「规则分流」，还需要在「分流 ➔ 引用」配置规则集（或直接套用机场下发的完整圈X配置文件）。
+
+### 机场官网没写支持 Quantumult X，节点还能在圈X里用吗？
+
+只要协议在圈X支持列表中且不依赖冷门格式，通常可以通过标准节点订阅或合规本地转换工具转入；具体订阅格式与风险边界可参考 [订阅格式对照](/subscription/formats) 与 [转换安全性说明](/subscription/conversion)。

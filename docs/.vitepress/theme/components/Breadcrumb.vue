@@ -13,32 +13,10 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useRoute, useData } from 'vitepress'
+import { categoryNameMap } from '../../data/categories'
 
 const route = useRoute()
 const { frontmatter } = useData()
-
-const categoryNameMap: Record<string, string> = {
-  'start': '新手入门',
-  'clients': '客户端知识',
-  'clash': 'Clash 系列',
-  'clash-verge': 'Clash Verge',
-  'shadowrocket': 'Shadowrocket',
-  'v2rayn': 'v2rayN',
-  'v2rayng': 'v2rayNG',
-  'sing-box': 'sing-box',
-  'hiddify': 'Hiddify',
-  'stash': 'Stash',
-  'surge': 'Surge',
-  'quantumult-x': 'Quantumult X',
-  'protocols': '协议百科',
-  'network': '线路知识',
-  'subscription': '订阅知识',
-  'troubleshooting': '故障排查',
-  'scenarios': '使用场景',
-  'guides': '选择指南',
-  'glossary': '百科词典',
-  'about': '关于本站'
-}
 
 interface CrumbItem {
   title: string

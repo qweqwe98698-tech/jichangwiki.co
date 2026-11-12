@@ -1,6 +1,6 @@
 ---
 title: 关于 JichangWiki 百科知识库
-description: JichangWiki.co 网站定位、使命愿景、独立内容编写准则与技术团队介绍。
+description: JichangWiki.co 网站定位与使命愿景：坚持客观抓包快照、区分信息百科与商业推荐、独立内容编写准则及技术团队背景介绍。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

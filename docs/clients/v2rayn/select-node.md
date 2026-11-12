@@ -1,6 +1,6 @@
 ---
 title: v2rayN 活动服务器选择与切换
-description: 如何在 v2rayN 中将节点设为活动服务器、批量排序与快速切换出口节点。
+description: v2rayN 节点选择与批量测速实操：掌握回车设为活动服务器、真连接延迟测试、按国家地区排序与快捷切换出口节点的完整操作流程。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

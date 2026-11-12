@@ -1,47 +1,34 @@
 ---
-title: AmyTelecom 深度评测 - 老牌低调大带宽 4K/8K 视频旗舰
-description: AmyTelecom 机场深度评测：多入口 BGP 中转与专线混合架构、晚高峰千兆测速、套餐资费与优惠码。
-updated: 2026-08-18
-lastReviewed: 2026-08-18
+title: AmyTelecom 历史评测参考存档 - 大带宽混合专线架构特征
+description: AmyTelecom 历史参考档案：说明其大带宽 4K/8K 视频与 BGP 混合专线定位，未纳入 2026-08-11 现役实测名单，附现役大流量专线替代方案。
+updated: 2026-11-12
+lastReviewed: 2026-11-12
 difficulty: medium
 category: 深度评测
 ---
 
-<script setup>
-import { airportsData } from '../.vitepress/data/airportsData'
-const airport = airportsData.find(a => a.id === 'amytelecom')
-</script>
+# AmyTelecom 历史评测参考（归档说明）
 
-<AirportDetailHeader v-if="airport" :airport="airport" />
+<WarningBox title="历史参考归档提示">
+该条目属于本站早期整理的历史资料参考，未包含在现役 42 家品牌深度评测库（含 `08-11`/`08-19` 等实测抓包与实时入口核验）之中。如需当前已核验入库的 150GB 大流量与专线方案，请对比下方现役评测档案。
+</WarningBox>
 
-## 🔍 品牌背景与定位
+## 🔍 品牌定位历史特征
 
-AmyTelecom 是一家运营多年的低调老牌服务商，以**大带宽吞吐冗余充足**著称。节点带宽配置普遍极高，深受重度 4K/8K 视频爱好者与大文件下载用户的青睐。
-
----
-
-## ⚙️ 网络架构实测
-
-- **传输链路**：优质 BGP 多入口 + 混合内网专线。
-- **晚高峰表现**：单线程下行速率实测可跑满 300~500Mbps 宽带，YouTube 4K 播放秒开无卡顿。
-- **流媒体解锁**：主流香港、日本、美国节点全面解锁 Netflix、Disney+ 与 YouTube Premium。
+AmyTelecom 过往在中文技术社区中常被归类为侧重大带宽冗余与高清流媒体观看的服务商代表，历史上曾阶段性限制新用户注册以控制单节点并发负载。
 
 ---
 
-## 💎 核心优缺点对比
+## ⚙️ 常见架构与使用关注点
 
-### ✅ 核心优势
-1. **单线程吞吐极快**：大文件下载与高码率流媒体播放体验一流。
-2. **多年信誉稳定**：老牌团队维护，极少出现大面积长时间断网。
-3. **支持纯月付**：¥28/月起步，丰俭由人。
-
-### ⚠️ 不足与注意事项
-1. 经常开启注册限制以保障现有老用户带宽质量，需关注开放时机。
+- **传输链路特点**：国内 BGP 多入口搭配混合内网专线。
+- **选型核心考量**：高码率 4K/8K 流媒体除了看峰值吞吐外，更依赖于是否具备原生 IP 解锁以及套餐流量配额是否充足（推荐 150GB/月起步）。
 
 ---
 
-## 🎁 专属优惠与购买建议
+## 🔄 2026 现役大流量与 4K 流媒体替代对比
 
-<CouponBox code="AMY2026" discount="立减优惠" />
-
-- **直达入口**：[前往 AmyTelecom 官网注册并订阅](https://jichangwiki.co/go/amytelecom)
+- **[Netflix 4K / YouTube 4K 流媒体机场推荐](/recommend/streaming-airport)**
+- **[光速云深度评测（Top 1 主推 · 6图）](/reviews/guangsuyun)**：2020 年起老牌 IEPL+企业内网双专线，纯月付 ¥25/168GB 且享完整三网抓包。
+- **[微风网络深度评测（Top 4 · 07-19图）](/reviews/weifeng)**：清风年付 100GB/月 + 乘风月付 ¥27 享 200GB 大包，支持双端兼容。
+- **[42 家现役机场深度评测档案总览](/reviews/)**

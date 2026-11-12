@@ -1,6 +1,6 @@
 ---
 title: v2rayN 已连接但打不开网页排查
-description: 节点有延迟、v2rayN 显示正常运行，但浏览器完全无法加载页面的排查指南。
+description: v2rayN 节点有延迟但打不开网页排查指南：检查系统代理设置、Core 路由规则死循环、DNS 解析失效与浏览器扩展冲突 5 步速查。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

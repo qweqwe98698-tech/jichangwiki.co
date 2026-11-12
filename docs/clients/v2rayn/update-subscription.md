@@ -1,6 +1,6 @@
 ---
 title: v2rayN 更新订阅与自动更新策略
-description: v2rayN 更新订阅的正确操作模式（通过代理与不通过代理的区别）及定时自动同步配置。
+description: v2rayN 更新订阅实操教程：对比「通过代理」与「不通过代理」更新机制，配置定时自动同步并排查订阅链接打不开的解决步骤。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

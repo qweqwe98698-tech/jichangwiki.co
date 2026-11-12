@@ -1,38 +1,74 @@
 ---
-title: Clash 自动更新订阅设置 - 定时更新、静默同步与失败排查
-description: 深度解析 Clash 客户端设置定时自动更新订阅配置、静默拉取最新可用节点、防止断连与更新失败排查。
-updated: 2026-08-18
-lastReviewed: 2026-08-18
+title: Clash 内核自动更新机制解析 - 响应头间隔、覆写与失效排查
+description: 解析 Clash / Mihomo 内核自动更新订阅时的 HTTP profile-update-interval 控制、本地规则覆写冲突处理及更新失败定位思路。
+updated: 2026-11-12
+lastReviewed: 2026-11-12
 difficulty: easy
 category: 客户端知识
+faq:
+  - q: 客户端显示「上次更新成功」但节点还是旧的怎么办？
+    a: 请先核对机场后台订阅域名或 Token 是否已重置，其次检查是否启用了本地 Script/Merge 全局覆写导致部分字段被锁定；也可以手动右键 Profile 执行一次完整更新并观察控制台日志。
+  - q: profile-update-interval 响应头和客户端本地设置谁优先级更高？
+    a: 多数 Clash 图形客户端在首次导入时会读取服务端下发的 profile-update-interval 小时数作为默认值；当你在客户端本地手动修改更新间隔（分钟）后，通常以本地配置为准。
+  - q: 更新间隔设成每 5 分钟一次会更好吗？
+    a: 不建议。过高频率拉取订阅极易触发机场后端 API 速率限制（返回 429 Too Many Requests）或风控封禁，推荐维持在 720 分钟（12 小时）或 1440 分钟（24 小时）一次。
 ---
 
-# Clash 自动更新订阅设置与故障排查
+# Clash 内核自动更新订阅机制解析
 
-<AnswerBox question="怎么在 Clash 中设置每天自动更新节点订阅？">
-在 Clash Verge 中：<br>
-1. 点击左侧 `订阅 (Profiles)`；<br>
-2. 鼠标右键点击当前使用的订阅卡片 ➔ 选择 `编辑信息 (Edit)`；<br>
-3. 将 `更新间隔 (Interval)` 设为 <strong>720 分钟 (12 小时)</strong>；<br>
-4. 点击保存，客户端将在后台静默自动下载同步服务商最新的节点 IP 与端口。
+<AnswerBox question="Clash 系列客户端自动更新订阅是如何工作的？建议间隔设多少？">
+当你在 Clash 客户端设置了自动更新间隔后，客户端会按周期向订阅 URL 发起 HTTPS GET 请求，重新下载完整 YAML 并触发内核热重载（Hot Reload）。<br>
+<strong>推荐间隔为 720~1440 分钟（12~24 小时）</strong>。若你需要 Clash Verge Rev 界面中的具体设置步骤与系统代理更新开关配置，请直接前往：<a href="/clients/clash-verge/update-subscription">Clash Verge 自动更新订阅操作指南</a>。
 </AnswerBox>
 
 ---
 
-## 🌟 2026 标配全格式一键订阅稳定专线机场推荐
+## 一、决定自动更新频率的两大来源
 
-<script setup>
-import { airportsData } from '../../.vitepress/data/airportsData'
-const guangsu = airportsData.find(a => a.id === 'guangsuyun')
-const civet = airportsData.find(a => a.id === 'civetnet')
-</script>
+很多用户疑惑“明明没改过设置，为什么客户端自动设置了 24 小时更新”，这来自服务端响应头与本地设置的协同机制：
 
-<AirportCard v-if="guangsu" :airport="guangsu" />
-<AirportCard v-if="civet" :airport="civet" />
+1. **服务端 HTTP 响应头（默认建议值）**：机场后端返回订阅 YAML 时，通常附带 `profile-update-interval: 24`（单位为小时），客户端初次导入时会将其写入本地配置元数据。
+2. **客户端本地 Profile 元数据（用户覆写）**：一旦用户在客户端编辑卡片并填入自定义分钟数（如 `720`），后续周期调度将以客户端本地定时任务为准，不再被服务端响应头重置。
+
+> [!TIP] 更新频率安全边界
+> 机场后端 API 通常设有防并发与 CC 限流策略。频繁手动连点更新或把间隔设为 5~30 分钟，容易触发 `429 Too Many Requests` 或短暂拉黑本地出口 IP。
 
 ---
 
-## 📚 关联技术图谱
-- [更新订阅失败排查完整指南](/troubleshooting/subscription-update-failed)
-- [订阅 (Subscription) 底层原理](/glossary/subscription)
-- [2026 机场综合口碑排行榜](/navigation/ranking)
+## 二、为什么更新完订阅后策略组或分流又恢复原样？
+
+在 Clash / Mihomo 生态中，远端订阅 YAML 是**整份替换**而非部分增量合并的：
+
+- **直接修改订阅源文件会被覆盖**：如果你手动改了软件缓存目录中的 YAML 文件内容，下次自动更新订阅时会直接被机场最新配置覆盖。
+- **持久化修改的正确方式**：应在客户端使用 **Merge（配置合并）** 或 **Script（扩展脚本）** 等局部覆写机制单独追加自定义规则，让远端节点清单和本地分流规则解耦。具体规则语法可对照 [Clash 分流规则语法与高级配置](/clients/clash/rules)。
+
+---
+
+## 三、自动更新静默失败的三大排查方向
+
+1. **开启系统代理形成死锁**：旧节点彻底失效且系统代理处于开启状态时，客户端更新订阅的请求被送进失效代理通道，最终触发连接超时。解决思路是先关闭代理直连尝试一次，或在客户端启用对应「通过现有代理/直连切换」策略。
+2. **订阅域名遭运营商临时阻断**：直连超时但手机 4G/5G 热点或挂备用代理可以打开网页端面板，即属于订阅主域名被阻断，需去官网换备用订阅域名。
+3. **响应状态码异常（403 / 404 / 502）**：详细状态码对照与急救方案请查看 [更新订阅失败状态码排查指南](/troubleshooting/subscription-update-failed) 与 [订阅链接打不开处理方案](/subscription/url-not-working)。
+
+---
+
+## 常见问题解答（FAQ）
+
+### 客户端显示「上次更新成功」但节点还是旧的怎么办？
+
+请先核对机场后台订阅域名或 Token 是否已重置，其次检查是否启用了本地 Script/Merge 全局覆写导致部分字段被锁定；也可以手动右键 Profile 执行一次完整更新并观察控制台日志。
+
+### profile-update-interval 响应头和客户端本地设置谁优先级更高？
+
+多数 Clash 图形客户端在首次导入时会读取服务端下发的 `profile-update-interval` 小时数作为默认值；当你在客户端本地手动修改更新间隔（分钟）后，通常以本地配置为准。
+
+### 更新间隔设成每 5 分钟一次会更好吗？
+
+不建议。过高频率拉取订阅极易触发机场后端 API 速率限制（返回 `429 Too Many Requests`）或风控封禁，推荐维持在 720 分钟（12 小时）或 1440 分钟（24 小时）一次。
+
+---
+
+## 关联阅读与操作跳转
+- [Clash Verge 自动更新与直连/代理更新设置](/clients/clash-verge/update-subscription)
+- [Clash Verge 订阅导入完整步骤](/clients/clash-verge/import-subscription)
+- [如何规划多客户端自动更新策略](/subscription/how-to-update)

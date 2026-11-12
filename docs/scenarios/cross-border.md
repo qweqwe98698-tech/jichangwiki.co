@@ -1,6 +1,6 @@
 ---
 title: 跨境电商多店铺运营代理实战 - Amazon / Shopee / eBay 防关联与独立 IP
-description: 深度解析跨境电商多店铺防关联原理、住宅静态 IP、亚马逊卖家后台风控规则与企业级安全专线机场选型。
+description: 跨境电商多店铺防关联与网络选型：解析亚马逊/TikTok 卖家后台风控规则、静态住宅原生 IP 机制与企业级专线隔离方案。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: hard
