@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket (小火箭) iOS 下载与美区 Apple ID 安装教程
-description: 手把手指导如何在 iPhone / iPad 上通过外区（美区/港区）Apple ID 安全下载正版 Shadowrocket 客户端。
+description: 手把手指导如何在 iPhone 与 iPad 上通过外区（美区/港区）Apple ID 安全购买并下载安装正版 Shadowrocket（小火箭）客户端，详解应用商店账号切换规范、官方礼品卡充值流程，并重点提示严禁登录陌生人共享 Apple ID 以防远程锁机勒索的关键安全红线，确保正版安全安装并规避风险。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

@@ -1,6 +1,6 @@
 ---
 title: 不限时按量付费备用机场推荐：流量不过期、防失联应急方案
-description: 2026 不限时按量付费（Pay-as-you-go）机场推荐：一次购买永久有效直到流量用尽，对比星岛梦与灵猫网络规格，并附 Clash Verge 双订阅故障转移（Fallback）防断网配置指南。
+description: 2026 不限时按量付费（Pay-as-you-go）备用机场推荐：流量一次购买永久有效直到用尽，彻底避免低频使用浪费或主力机场维护时断网失联，横向对比星岛梦、灵猫网络与二猫云等不限时方案规格，并附 Clash Verge 双订阅故障转移（Fallback）实战配置与省流量实用技巧，确保全天候不断联。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket 是什么？- iOS 小火箭的工作原理与核心能力
-description: 详细介绍 Shadowrocket 客户端的开发背景、网络扩展架构 (Network Extension) 以及在 iPhone 上的运作机制。
+description: 全面介绍 iOS 代理客户端 Shadowrocket（小火箭）的起源背景、基于苹果 Network Extension 框架的本地 VPN 通道运作原理、完整支持的协议栈（Shadowsocks、VMess、VLESS、Trojan、Hysteria 2 等）以及低功耗与高兼容性的核心优势解析，全面了解。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

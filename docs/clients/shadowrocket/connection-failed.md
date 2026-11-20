@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket 无法连接 / 无网络访问排查
-description: Shadowrocket 小火箭连接失败解决指南：排查 iOS 开关打开后无法联网、无 VPN 图标、未能创建网络连接与节点超时排查步骤。
+description: Shadowrocket 小火箭连接失败与开启后无法联网的四步排查指南：覆盖 iOS 顶部开关开启后无网络访问、状态栏不显示 VPN 图标、弹出「未能创建网络连接」权限报错以及全部节点测速超时的定位与快速恢复步骤，附切换蜂窝网络与 Wi-Fi 对比验证方法及新手实用 FAQ 解答，快速恢复联网体验。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

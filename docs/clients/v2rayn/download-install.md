@@ -1,6 +1,6 @@
 ---
 title: v2rayN (Windows) 下载、安装与环境准备教程
-description: 官方 GitHub Release 下载包选择（With-Core 版本与基础版）、.NET 8 桌面运行时安装与首次启动配置。
+description: Windows 平台 v2rayN 官方 GitHub Release 下载、安装与运行环境准备教程：详解 With-Core 完整版与基础版安装包的核心区别、微软 .NET 8 Desktop Runtime 桌面运行时安装步骤、解压路径权限避坑、防杀毒误杀及首次启动初始化配置实用要点，快速完成安装。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

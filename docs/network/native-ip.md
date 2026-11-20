@@ -1,6 +1,6 @@
 ---
 title: 原生 IP (Native IP) 与住宅 IP 深度指南 - 流媒体全解锁与跨境风控实战
-description: 深度解析原生 IP 与住宅家庭宽带 IP (Residential IP) 技术标准、Whois 注册一致性校验、TikTok 运营与 ChatGPT 防封号实战。
+description: 深度解析原生 IP（Native IP）与住宅家庭宽带 IP 的技术标准及风控信任度金字塔，详解 IP 注册归属一致性 Whois 查验与权威检测工具矩阵，全面覆盖 Netflix 4K 流媒体全解锁、TikTok 跨境电商防限流以及 ChatGPT/Claude 防封号实战选型与配置指南，轻松避开风控拦截与地区限制。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

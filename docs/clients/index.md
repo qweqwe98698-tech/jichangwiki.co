@@ -1,6 +1,6 @@
 ---
 title: 客户端知识中心 - 多平台代理工具全景索引
-description: 覆盖 Windows、macOS、iOS 与 Android 各大操作系统的代理客户端矩阵、功能横向对比与独立知识树索引。
+description: 覆盖 Windows、macOS、iOS 与 Android 各大操作系统的主流代理客户端全景知识中心：提供客户端功能矩阵横向对比、Mihomo 与 sing-box 及 Xray 内核生态差异解析，以及 Clash Verge、v2rayN、Shadowrocket 等独立客户端知识树完整直达索引。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

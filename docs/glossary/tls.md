@@ -1,6 +1,6 @@
 ---
 title: TLS (Transport Layer Security) - 握手时序、加密套件与代理伪装机制
-description: 深度解析 TLS 1.3 安全传输层协议、非对称密钥交换、Trojan / VLESS-Reality 流量伪装技术与 TLS 握手故障排查。
+description: 深度解析 TLS 1.3 安全传输层协议的 1-RTT 极速握手时序、非对称密钥交换与加密套件工作机制，系统梳理 Trojan 与 VLESS-Reality 等主流代理协议对 TLS 流量伪装技术的演进应用，并附高频 TLS 证书校验报错与握手超时排查方案对照表及高可用专线机场推荐，助你快速理解加密伪装与排查。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

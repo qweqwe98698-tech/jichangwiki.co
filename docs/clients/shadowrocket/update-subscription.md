@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket 更新订阅与自动更新策略
-description: Shadowrocket 小火箭更新订阅详细步骤：支持下拉一键刷新、开启启动时自动同步，并附订阅链接失效或无法拉取节点故障排查。
+description: Shadowrocket 小火箭更新订阅详细操作教程：演示主界面左滑刷新与下拉同步操作，详解配置「打开时更新」与后台定时自动更新策略的最佳实践，并附订阅链接失效、HTTP 404/403 请求超时、CDN 拦截或无法拉取节点列表时的常见故障排查指南与替代导入实用策略，保障节点列表实时可用与长期稳定。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

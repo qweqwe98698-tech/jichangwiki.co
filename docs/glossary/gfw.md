@@ -1,6 +1,6 @@
 ---
 title: GFW (防火长城) - 技术演进、拦截机制与现代抗封锁技术解析
-description: 深度解析防火长城 (Great Firewall) 的底层技术手段（SNI阻断、主动探测、机器学习分类器）与现代专线/Reality协议抗封锁实战。
+description: 深度解析防火长城（GFW）的技术演进脉络与底层拦截机制全景，重点剖析 DNS 污染、TLS SNI 阻断、主动探测与流量特征机器学习分类器三大核心手段，并对比企业内网专线不过公网与 VLESS-Reality 伪装两大终极抗封锁技术架构方案，附稳定抗封锁专线机场选型推荐与解析，全面看懂抗封锁技术演进。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: hard

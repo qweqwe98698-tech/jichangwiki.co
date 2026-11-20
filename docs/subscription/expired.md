@@ -1,6 +1,6 @@
 ---
 title: 订阅过期与流量耗尽判断指南 - 快速核查账户状态与续费同步步骤
-description: 教你在 Clash Verge、Shadowrocket、v2rayN 客户端与 HTTP 响应头中准确辨别套餐已到期、月流量耗尽及按量包清零状态，并区别于纯线路中断故障。
+description: 订阅过期与月度流量耗尽判断指南：教你在 Clash Verge、Shadowrocket 与 v2rayN 客户端界面及 HTTP subscription-userinfo 响应头中准确辨别套餐已到期、当月流量包耗尽及按量包清零这 3 种典型提醒信号，精准区分于纯线路断连故障并附续费后同步恢复步骤。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

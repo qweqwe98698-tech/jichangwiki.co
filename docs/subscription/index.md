@@ -1,6 +1,6 @@
 ---
 title: 订阅知识库导读 - 订阅格式、导入更新与故障链路
-description: 覆盖订阅链接原理、主流订阅格式 (Clash/Base64/sing-box)、订阅转换安全风险以及更新失败全链路排查。
+description: 代理订阅知识库全景导读：系统构建涵盖订阅链接聚合分发原理、主流订阅格式（Clash YAML / Base64 / sing-box JSON）结构解析、第三方在线订阅转换安全隐私风险评估、账户过期流量核查，以及客户端拉取更新失败与无节点列表全链路排查的核心实用参考知识体系，帮你全面掌握订阅管理与排错技巧。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

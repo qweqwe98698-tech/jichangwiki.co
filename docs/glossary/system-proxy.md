@@ -1,6 +1,6 @@
 ---
 title: 系统代理 (System Proxy) - 完整工作原理、各平台配置与故障排查
-description: 深度解析操作系统原生系统代理机制、WinINet 与 macOS 网络配置、应用不走代理常见根因、环境变量残留排查与最佳机场推荐。
+description: 深度解析系统代理（System Proxy）的底层数据流向以及 Windows WinINet 与 macOS 系统网络配置接口，深入剖析「应用不走代理」的三大固有局限与终端环境变量残留问题，提供关闭客户端后导致电脑全面断网的高频故障快速修复步骤与高可用专线机场选型实用建议，彻底避开代理失效困境与断网烦恼。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

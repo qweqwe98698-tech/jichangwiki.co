@@ -1,6 +1,6 @@
 ---
 title: Clash 系列客户端全景知识库与教程 - 2026 最新使用指南
-description: 2026 最新 Clash 系列客户端知识库：全面覆盖 Clash 原理、Clash Verge Rev 安装、订阅导入、分流规则、TUN 模式与故障排查。
+description: 2026 Clash 系列客户端全景知识库与操作手册：全面覆盖原版内核与 Mihomo（Meta）架构演进原理、Clash Verge Rev 与 FlClash 多平台安全下载安装、订阅链接导入与自动更新、Rule 分流规则语法、TUN 虚拟网卡模式、Fake-IP DNS 配置及十大高频故障排查完整指南。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

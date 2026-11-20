@@ -1,6 +1,6 @@
 ---
 title: v2rayN (Windows) 适用的机场节点与服务选型考量指南
-description: 专门面向 Windows v2rayN 客户端用户如何挑选节点机场服务商：重点考量通用 Base64/Xray 订阅兼容性、VLESS-Reality 与 Trojan 现代协议下发、以及双模式订阅拉取支持。
+description: 专门面向 Windows v2rayN 客户端用户整理的节点机场服务商选型考量指南：重点核对通用 Base64/Xray 订阅兼容性、VLESS-Reality 与 Trojan 等现代加密协议下发完整度、是否支持直连与代理双模式安全拉取订阅节点，以及常见桌面客户端搭配建议与 FAQ，快速锁定稳定方案。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

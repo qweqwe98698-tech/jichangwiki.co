@@ -1,6 +1,6 @@
 ---
 title: 订阅 (Subscription) - 完整工作原理、格式解剖、客户端导入与更新失败排查
-description: 深度解析机场订阅链接 (Subscription URL) 底层工作流、Base64 与 Clash YAML 配置解剖、User-Info 流量响应头、客户端导入与高频报错排查。
+description: 深度解析机场订阅链接（Subscription URL）的底层分发机制与数据请求时序流向，逐项解剖 Base64、Clash YAML 与 sing-box JSON 主流订阅格式及 subscription-userinfo 流量响应头，并汇总主流客户端导入同步实操与高频订阅报错排查实用方案，快速排查常见失败。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

@@ -1,6 +1,6 @@
 ---
 title: v2rayN TUN 模式配置与使用
-description: 详细指导如何在 v2rayN 中开启 TUN 虚拟网卡模式，使用 sing-box 核心接管系统所有进程与联机游戏流量。
+description: 详细指导如何在 v2rayN 中开启 TUN 虚拟网卡模式（Enable Tun）：介绍 Windows 管理员权限与依赖条件、切换使用 sing-box 核心接管本地命令行终端、Git、Docker、系统商店更新以及外服联机游戏 UDP 流量的完整配置步骤与常见报错排查实用完整方案，实现全流量接管。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

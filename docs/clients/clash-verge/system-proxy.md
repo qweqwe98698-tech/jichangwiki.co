@@ -1,6 +1,6 @@
 ---
 title: Clash Verge 系统代理开启与端口配置
-description: 详解 Clash Verge 的系统代理开关、混合代理端口 (Mixed Port) 机制及绕过系统代理的例外列表设置。
+description: 详解 Clash Verge Rev 系统代理开关的工作原理、混合代理端口（Mixed Port 7897）同时监听 HTTP 与 SOCKS5 协议的机制、绕过系统代理的局域网及内网 IP 例外列表配置，以及关闭或强退客户端后电脑无法正常上网的快速恢复解决办法，助力新手高效排错并避开断网坑，避免误触。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

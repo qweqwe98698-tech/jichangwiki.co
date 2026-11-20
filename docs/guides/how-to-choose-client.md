@@ -1,6 +1,6 @@
 ---
 title: 如何选择适合自己的代理客户端？- 2026 Windows/macOS/iOS/Android 全端决策树
-description: 详尽横向比较 Clash Verge Rev、v2rayN、Shadowrocket、Stash、Loon、Quantumult X、Surge、v2rayNG、NekoBox 与 Hiddify，帮你按系统平台与技术习惯一分钟选出最合适的主力代理工具。
+description: 2026 跨平台代理客户端选购决策树：详尽横向评测 Windows（Clash Verge Rev / v2rayN）、macOS（Stash / Surge）、iOS（Shadowrocket / Loon）与 Android（v2rayNG / NekoBox）主力工具的易用性、协议兼容与上手门槛，附常见问题解答。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

@@ -1,6 +1,6 @@
 ---
 title: 无法打开海外网页？- 2026 全面排查五步法与直接解决方案
-description: 深度排查无法打开 Google/YouTube/GitHub 等海外网站的常见根因、分流规则死循环、系统代理开关与一键修复。
+description: 连接代理后节点显示有延迟却依然无法打开 Google、YouTube、GitHub 等海外网站的五步全面排查指南：教你迅速定位本地系统代理开关未生效、Rule 分流规则死循环、TUN 虚拟网卡驱动路由冲突、本地 DNS 解析污染以及 Chrome/Edge 浏览器扩展抢权接管冲突问题与一键恢复，迅速联网。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

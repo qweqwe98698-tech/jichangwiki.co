@@ -1,6 +1,6 @@
 ---
 title: Clash 内核自动更新机制解析 - 响应头间隔、覆写与失效排查
-description: 解析 Clash / Mihomo 内核自动更新订阅时的 HTTP profile-update-interval 控制、本地规则覆写冲突处理及更新失败定位思路。
+description: 深入解析 Clash 与 Mihomo 内核自动更新订阅时的 HTTP 响应头 profile-update-interval 控制逻辑、定时同步机制以及本地规则覆写冲突处理方法，详细解释为什么更新后策略组配置会恢复原样，并系统排查客户端自动更新静默失败的三大根因方向及完整应对恢复方案，保障节点持续稳定。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

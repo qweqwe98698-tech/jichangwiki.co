@@ -1,6 +1,6 @@
 ---
 title: 延迟与 Ping (Latency) - 物理极限、测速机制差异与调优指南
-description: 深度解析网络延迟 (Ping / Latency) 的物理光速传播极限、TCP vs HTTP 测速差异、游戏低延迟专线调优与 2026 低延迟机场推荐。
+description: 深度解析跨境网络延迟（Ping / Latency）受制于物理光速传播极限的底层原因，精准辨析 ICMP Ping、TCP Ping 与 HTTP 真连接测试三大主流测速类型的本质区别，并提供降低本地链路损耗、匹配就近入口节点与游戏商务低延迟专线调优实战方法与优质低延迟机场推荐，显著改善游戏联机与日常响应。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

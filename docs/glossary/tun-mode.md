@@ -1,6 +1,6 @@
 ---
 title: TUN 虚拟网卡模式 (TUN Mode) - 工作原理、游戏接管与高级配置
-description: 深度解析 TUN 虚拟网卡模式底层机制、Wintun 驱动与 LwIP 协议栈、游戏 UDP 流量全接管与高可用专线机场选型。
+description: 深度解析 TUN 虚拟网卡模式（TUN Mode）基于 Wintun 驱动与 LwIP 协议栈的底层工作流，全方位对比其与传统系统代理在接管命令行终端、UWP 应用与外服游戏 UDP 流量上的技术差异，并汇总主流游戏场景实战配置指南与常见驱动启动报错排错方案和机场选型推荐，助力全进程稳定加速与稳定低延迟连接。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

@@ -1,6 +1,6 @@
 ---
 title: 广播 IP (Broadcast IP) - BGP Anycast 宣告机制、流媒体受限成因与识别
-description: 深度解析广播 IP（播报 IP）工作原理、BGP 跨区宣告机制、为什么导致 Netflix 只能看自制剧与识别判定方法。
+description: 深度解析广播 IP（Broadcast IP / 播报 IP）的 BGP Anycast 跨区路由宣告底层机制，解释为什么许多亚太机房使用广播 IP 并导致 Netflix 只能看自制剧、部分平台风控升高，全面对比广播 IP 与原生 IP 核心差异并提供快速识别判定方法及高纯度专线机场推荐，避免流媒体解锁失败。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

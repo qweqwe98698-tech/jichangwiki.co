@@ -1,6 +1,6 @@
 ---
 title: 订阅转换的原理与安全风险 - 如何避免 Token 泄露与恶意劫持
-description: 深度剖析 Subconverter 在线订阅转换器的工作流程、第三方公共转换站点的 Token 偷跑与规则篡改风险，并给出本地 Subconverter 安全替代方案。
+description: 深度剖析在线订阅转换器（Subconverter）在后台合并节点、注入分流规则与跨客户端格式转换的工作原理，重点揭露来历不明的第三方公共转换站点存在的订阅 Token 泄露、流量被盗刷与恶意篡改规则等三大真实隐患，并给出本地私有化部署等更安全的三级替代实用避坑方案，全面守护你的个人订阅账号与流量安全。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: hard

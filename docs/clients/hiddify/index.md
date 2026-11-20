@@ -1,6 +1,6 @@
 ---
 title: Hiddify 跨平台客户端全指南 - 安装支持、订阅导入与 Smart 智能选路详解
-description: 全面介绍开源跨平台代理工具 Hiddify（sing-box 内核）在 Windows、macOS、iOS 与 Android 上的特色功能、支持订阅格式、导入操作步骤与常见问题排查。
+description: 全面介绍开源跨平台代理工具 Hiddify（基于 sing-box 内核）在 Windows、macOS、iOS 与 Android 多端的核心优势、Smart 智能自动选路与极简交互定位、支持的机场订阅格式（Clash/Base64/sing-box）、完整导入操作步骤及常见连接故障排查实用指南。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket 小火箭订阅更新失败排查：Update Failed 与剪贴板测试
-description: 解决 iPhone / iPad Shadowrocket 更新订阅时弹出 Update Failed、订阅返回空白、无节点提示以及 iOS 16/17/18 剪贴板读取拦截等问题。
+description: 全面解决 iPhone / iPad Shadowrocket（小火箭）更新或导入订阅时弹出 Update Failed、订阅返回空白、无节点提示以及 iOS 16/17/18 系统剪贴板读取拦截导致无法识别链接等问题，提供按高发概率排序的四步精准排错流程与稳定恢复方案，附常见关联故障跳转引导，快速修复。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

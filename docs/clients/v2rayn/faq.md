@@ -1,6 +1,6 @@
 ---
 title: v2rayN 综合问题 FAQ 汇总
-description: v2rayN 高频常见问题与疑难解答 FAQ：汇总 Windows 用户关注的核心切换（Xray/sing-box）、快捷键、开机自启与分流规则避坑。
+description: v2rayN 综合常见问题与疑难解答 FAQ：全面汇总 Windows 用户在切换 Xray 与 sing-box 双核心、常用测速快捷键（Ctrl+R / Ctrl+O / Ctrl+T）、开机自启动设置、Geo 路由规则更新以及多客户端端口冲突中的高频避坑要点与日常高效使用实用技巧，提升日常使用体验。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

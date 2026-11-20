@@ -1,6 +1,6 @@
 ---
 title: Clash 订阅机制与 YAML 配置解析 - 参数结构与内核兼容性指南
-description: 解析 Clash 与 Mihomo 内核订阅的 YAML 配置文件结构、flag=clash 与 flag=meta 请求参数差异，以及旧版 Clash 内核升级迁移建议。
+description: 深入解析 Clash 与 Mihomo 内核订阅的 YAML 配置文件三段核心结构（proxies、proxy-groups、rules），详解订阅请求头 flag=clash 与 flag=meta 的节点协议下发参数差异、新协议兼容风险分析，以及旧版 Clash 内核用户平滑迁移至现代客户端的实操指南。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

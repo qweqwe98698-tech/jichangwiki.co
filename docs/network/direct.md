@@ -1,6 +1,6 @@
 ---
 title: 直连节点技术深度解析 - 公网跨境传输、晚高峰 QoS 限速与自建避坑
-description: 深度解析公网直连节点（Direct Connection）技术架构、晚高峰国际出口公网拥堵成因、GFW 主动探测识别风险与向专线迁移指南。
+description: 深度解析公网直连节点（Direct Connection）的数据传输链路与脆弱点，剖析晚高峰公网国际出口 QoS 限速拥堵、跨运营商丢包与 GFW 主动探测识别封锁三大核心风险，通过公网直连与企业级专线实测表现对比，给出自建节点迁移与 2026 稳定专线机场选型实用建议，告别晚高峰公网丢包与频繁断流。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

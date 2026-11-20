@@ -1,6 +1,6 @@
 ---
 title: 编辑规范、评测方法论与商业合作披露政策 (Editorial Policy)
-description: 全面公开 JichangWiki 对技术知识文章、节点故障排查与机场品牌收录档案的编写校对标准、单次测试快照局限说明，以及内容信息区与商业推广关系的严格隔离原则。
+description: 全面公开 JichangWiki 编辑规范与评测方法论（Editorial Policy）：详细阐述技术知识文章、节点故障排查及 42 家服务商收录档案的编写校对标准、单日抓包快照局限性透明披露规则，坚决拒绝虚构跑分与虚假背书，并严格落实信息区与商业导流的边界隔离原则与纠错机制，保障评测真实客观与内容严谨。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

@@ -1,6 +1,6 @@
 ---
 title: Clash Verge 连接成功但打不开网页排查
-description: Clash Verge 节点延迟正常但打不开网页排查：系统代理残留、TUN 虚拟网卡冲突、浏览器扩展死循环与 DNS 劫持诊断解决流程。
+description: Clash Verge 显示节点延迟正常但浏览器打不开网页的完整排查指南：逐项诊断 Windows/macOS 系统代理设置残留、TUN 虚拟网卡路由冲突、浏览器代理扩展死循环抢权、Fake-IP DNS 解析劫持与 7897 端口监听异常，提供按命中率排序的快速修复步骤及网络连通性验证技巧，迅速恢复。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

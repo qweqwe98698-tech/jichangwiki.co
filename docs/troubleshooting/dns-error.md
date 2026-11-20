@@ -1,6 +1,6 @@
 ---
 title: DNS 解析错误与打不开网页排查 - Fake-IP、DoH 配置与防污染实战
-description: 深度解决 DNS_PROBE_FINISHED_NXDOMAIN 报错、微信能上网但网页打不开、Fake-IP 与 DoH 加密防污染配置指南。
+description: DNS 解析错误与打不开网页专项排查指南：深入解决浏览器报 DNS_PROBE_FINISHED_NXDOMAIN 错误、微信和 QQ 能联网但所有网页都打不开等典型症状，提供 Clash Fake-IP 模式调优、v2rayN DoH 加密解析配置、清理本地 DNS 缓存以及彻底防 DNS 污染实战方案。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

@@ -1,6 +1,6 @@
 ---
 title: Clash 分流规则语法与高级配置 - DOMAIN / IP-CIDR / GEOIP 实战
-description: 深度解析 Clash 规则分流语法、自顶向下匹配顺序、Rule-Providers 规则集自动更新与自定义规则实战。
+description: 深度解析 Clash 分流规则核心语法（DOMAIN、DOMAIN-SUFFIX、IP-CIDR、GEOIP 与 PROCESS-NAME）、配置文件自顶向下逐行匹配优先级逻辑、Rule-Providers 远程规则集自动更新配置，以及自定义国内直连与广告拦截屏蔽规则的完整实战配置指南与常见问题避坑。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

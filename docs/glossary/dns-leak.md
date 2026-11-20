@@ -1,6 +1,6 @@
 ---
 title: DNS 泄露 (DNS Leak) - 产生根因、隐私暴露风险与彻底防泄露实战
-description: 深度解析 DNS 泄露机制、为什么挂了代理还会暴露真实物理位置、dnsleaktest 检测与客户端防泄露配置。
+description: 深度解析 DNS 泄露（DNS Leak）的产生根因与隐私暴露风险：图解为什么明明挂了代理却依然会向本地运营商暴露真实物理位置与域名查询记录，详细演示使用 dnsleaktest 自测排查是否存在泄露的方法，并提供主流客户端彻底防泄露的三大配置方案与安全原生专线机场推荐，全面保护个人跨境上网隐私安全。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

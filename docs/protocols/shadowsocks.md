@@ -1,6 +1,6 @@
 ---
 title: Shadowsocks (SS) 协议深度解析 - 经典起源、SS-2022 规范与专线黄金搭档
-description: 深度解析 Shadowsocks (影梭) 协议历史、AEAD 现代密码套件、Shadowsocks 2022 规范与为什么专线最青睐 Shadowsocks。
+description: 深度解析 Shadowsocks（影梭 / SS）协议从早期加密到 AEAD 现代密码套件及 Shadowsocks 2022 规范的三大演进阶段，阐明为什么在高端 IEPL/IPLC 内网专线环境中机场最偏爱使用轻量无冗余开销的 Shadowsocks 协议，并附 Clash Verge 标准 YAML 配置示范。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

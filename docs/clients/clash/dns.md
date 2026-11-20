@@ -1,6 +1,6 @@
 ---
 title: Clash DNS 配置指南 - Fake-IP、Redir-Host 模式与防污染 DoH
-description: 深度解析 Clash DNS 模块、Fake-IP 虚拟地址池原理、国内外智能分流 nameserver-policy 配置与防 DNS 泄露实战。
+description: 深度解析 Clash 与 Mihomo 内核内置 DNS 模块工作机制、Fake-IP 虚拟地址池与 Redir-Host 映射模式的核心差异，详解国内外域名智能分流 nameserver-policy 策略配置、DoH/DoT 加密解析调优、防 DNS 污染以及彻底防止真实物理位置泄露的完整实战方案与推荐。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

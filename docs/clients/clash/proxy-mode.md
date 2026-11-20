@@ -1,6 +1,6 @@
 ---
 title: Clash 代理模式详解 - 规则分流、全局代理与直连模式深入对比
-description: 深度解析 Clash 的三种出站运行模式（Rule / Global / Direct）、流量判定原理与日常最佳配置方案。
+description: 深度解析 Clash 三大核心出站代理模式（Rule 规则分流、Global 全局代理与 Direct 直连模式）的底层流量判定逻辑与连接特征，详细对比开启全局代理访问国内网站减速、浪费流量及触发账号异地风控的差异，提供日常使用与故障排查时的最佳模式切换及策略配置实战参考方案，兼顾网速与账号安全及避坑要点。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

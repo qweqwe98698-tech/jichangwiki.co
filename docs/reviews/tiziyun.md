@@ -1,6 +1,6 @@
 ---
 title: 梯子云 2026 深度评测：¥7.4/月 IEPL+VLESS 双端兼容与厂商口径核查（#28）
-description: 2026 梯子云评测：2025 年上线平价 IEPL+VLESS 机场，年付折合 ¥7.4/月（60GB/月）且兼备官方自研端与 Clash Verge/小火箭标准订阅；诚实区分厂家宣称「全解锁」与暂缺本站独立抓包原图的现状（码 tiziyun）。
+description: 2026 梯子云深度评测（#28）：2025 年上线平价 IEPL+VLESS 机场，年付折合 ¥7.4/月（60GB/月）且兼备官方自研端与 Clash Verge/Shadowrocket 标准订阅；本文进行同档横向比价分析，诚实区分厂家宣称「全解锁」与暂缺本站独立测速抓包原图的现状（码 tiziyun）。
 updated: '2026-11-12'
 keywords: ['梯子云', '梯子云评测', '梯子云官网', 'tiziyun优惠码', '7.4元机场', 'VLESS IEPL']
 faq:

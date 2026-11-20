@@ -1,6 +1,6 @@
 ---
 title: 软路由与旁路网关 (Soft Routing) - OpenWrt 透明网关、全屋免客户端与流媒体解锁
-description: 深度解析软路由（x86 / ARM 工控机）硬件架构、OpenWrt 旁路网关配置、全屋设备免装客户端自动翻墙与 Apple TV 流媒体加速实战。
+description: 深度解析软路由与旁路网关（Soft Routing / OpenWrt）的 x86 与 ARM 工控机硬件架构及标准旁路由网络拓扑，帮助家庭网络实现全屋手机、电脑与智能设备免安装客户端自动分流翻墙，并详解 Apple TV 等大屏电视盒子流媒体 4K 解锁实战配置与大带宽机场选型，打造稳定全屋透明加速。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

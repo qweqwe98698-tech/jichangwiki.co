@@ -1,6 +1,6 @@
 ---
 title: Clash Verge (Rev) 下载与安装配置教程
-description: 详细讲解 Windows 与 macOS 平台下 Clash Verge Rev 的官方下载渠道、安装包架构选择及首次启动配置。
+description: 详细讲解 Windows 与 macOS 平台下 Clash Verge Rev 的官方 GitHub Release 安全下载渠道、x64 与 Apple Silicon ARM64 安装包架构选择、安装前置运行环境准备、Mihomo（Meta）与 Alpha 内核切换建议及首次启动初始化设置与常见安装报错应对。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

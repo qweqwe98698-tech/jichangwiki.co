@@ -1,6 +1,6 @@
 ---
 title: VLESS 和 VMess 有什么区别？- 深度技术对比与选型建议
-description: VLESS vs VMess 协议技术架构横向对比：深入解析加密计算开销、系统时间戳强依赖、Reality 伪装支持与吞吐效率演变史。
+description: VLESS 与 VMess 协议技术架构全方位横向对比：深入解析二者在对称加密计算开销（去冗余加密）、对客户端系统时间戳的强依赖差异、XTLS-Vision 与 Reality 现代伪装支持度以及高并发吞吐效率的演变史，清晰说明为什么 VLESS 已经成为 VMess 的主流升级替代方案，看懂协议演进趋势。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

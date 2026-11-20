@@ -1,6 +1,6 @@
 ---
 title: YouTube 4K/8K 视频播放卡顿调优 - 详细统计信息解读与单线程提速
-description: 深度解析 YouTube 4K/8K 视频播放卡顿成因、Stats for Nerds (详细统计信息) 解读、单线程吞吐优化与大带宽专线机场推荐。
+description: YouTube 4K/8K 超高清视频播放缓冲卡顿调优指南：教你看懂播放器右键「详细统计信息（Stats for Nerds）」中的 Connection Speed 与 Buffer Health 关键指标，剖析晚高峰单线程下载吞吐不足与公网丢包成因，并提供单线程测速提速技巧与大带宽专线机场选型建议。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

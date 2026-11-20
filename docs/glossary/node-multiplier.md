@@ -1,6 +1,6 @@
 ---
 title: 节点倍率 (Node Multiplier) - 计费机制、流量计算公式与防扣超技巧
-description: 深度解析节点倍率 (Multiplier) 的底层计费逻辑、低倍率大流量节点与高倍率专线节点选择技巧、防流量暴减避坑指南。
+description: 深度解析节点倍率（Node Multiplier）的底层计费逻辑与流量扣减计算公式，对比 0.1x 下载专用节点、1x 标准节点与 2x/3x 高倍率专线节点的适用场景，揭秘新手最常踩的「流量偷跑」两大认知误区并分享高性价比日常流量搭配组合策略及透明计费优质机场推荐，帮你精打细算用好每一 GB 流量。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

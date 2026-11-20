@@ -1,6 +1,6 @@
 ---
 title: 选择指南导读 - 决策模型与理性选型
-description: JichangWiki 选型指南专题中心：系统梳理客户端软件选型、核心代理协议取舍、国家地区节点匹配及新手选购服务避坑决策。
+description: JichangWiki 选择指南与理性决策模型专题中心：系统梳理 Windows/macOS/iOS/Android 客户端软件取舍、主流代理协议性能与抗封锁对比、公网直连与专线架构差异、全球地区节点匹配原则，以及新手首次选购稳定节点服务的全套避坑攻略与标准化实操指引入口，助力用户科学决策少走弯路。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

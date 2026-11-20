@@ -1,6 +1,6 @@
 ---
 title: IP 欺诈分 (Fraud Score) - 检测标准、风控原理与 1020 报错排查
-description: 深度解析 IP 欺诈分评判标准、Scamalytics / IPQS / Cloudflare 风控机制、解决 ChatGPT 1020 报错与高质量原生 IP 机场推荐。
+description: 深度解析 IP 欺诈分（Fraud Score）的评判标准与风控拦截原理：对比 Scamalytics、IPQS 与 Cloudflare 三大安全机构的评分等级对照，手把手教你自测当前代理节点出口 IP 纯净度，并提供解决 ChatGPT 1020 报错与防止 Claude 账号封禁的实战应对策略。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

@@ -1,6 +1,6 @@
 ---
 title: 订阅链接无法访问或报 404 / 500 错误排查 - API 恢复与新链接获取流程
-description: 专门排查直接在浏览器或客户端检查订阅 URL 时出现的 HTTP 404 Not Found、403 Forbidden、502 Bad Gateway 与域外阻断状态，教你分清 Token 作废与后端维护。
+description: 专门排查直接在浏览器或客户端检查机场订阅 URL 时出现的 HTTP 404 Not Found、403 Forbidden、502 Bad Gateway 与域外阻断无响应状态，教你通过浏览器返回的 4 种典型结果准确区分链接本身复制错漏、Token 作废重置还是服务商后端维护异常及应对方案，迅速排除故障。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

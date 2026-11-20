@@ -1,6 +1,6 @@
 ---
 title: 如何正确导入订阅到各大客户端？- 跨平台标准化操作入口与排错清单
-description: 汇总 Windows、macOS、iOS 与 Android 主流代理客户端（Clash Verge、v2rayN、Shadowrocket、v2rayNG）导入订阅链接的标准方式、通用避坑检查及一键唤起失败处理。
+description: 如何将机场订阅正确导入各大主流客户端？一站式汇总 Windows、macOS、iOS 与 Android 平台（Clash Verge Rev、v2rayN、Shadowrocket、v2rayNG）的标准化图文导入入口，梳理导入前务必核对的 4 项避开 90% 报错的基础检查清单以及导入后确认生效方法。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

@@ -1,6 +1,6 @@
 ---
 title: 规则分流模式 (Rule Mode) - 规则集语法、匹配优先级与国内外流量智能分流
-description: 深度解析代理客户端规则分流模式 (Rule Mode) 的工作原理、DOMAIN / DOMAIN-SUFFIX / IP-CIDR / GEOIP 规则匹配优先级与分流配置实操。
+description: 深度解析代理客户端规则分流模式（Rule Mode）的底层匹配算法与自顶向下优先级顺序，全面整理 DOMAIN、DOMAIN-SUFFIX、IP-CIDR 与 GEOIP 等核心规则类型语法速查表，并讲解 Rule Providers 现代远程规则集自动更新机制与高可用专线机场配置推荐，实现精准国内外智能分流。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

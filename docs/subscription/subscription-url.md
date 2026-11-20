@@ -1,6 +1,6 @@
 ---
 title: 订阅链接地址与结构深度解析 - Token 参数与流量响应头说明
-description: 全面拆解机场订阅 URL 的域名、鉴权 Token 与格式标志参数，解析 HTTP subscription-userinfo 响应头如何向客户端回传剩余流量与到期时间，并提供泄露防范建议。
+description: 全面拆解机场订阅 URL 地址的各字段结构：深入解析订阅域名防屏蔽策略、鉴权 Token 安全参数与 flag 格式标志位的作用，详细解读服务端通过 HTTP subscription-userinfo 响应头向客户端回传剩余流量与到期时间的元数据机制，并分享链接防泄露安全排错实用习惯及避坑，提升日常管理安全性。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

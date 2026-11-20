@@ -1,6 +1,6 @@
 ---
 title: Google Gemini 区域限制排查与节点选择
-description: 解决 Google Gemini (原 Bard) 提示当前国家地区不可用以及 Advanced 订阅支付问题。
+description: Google Gemini（原 Bard）区域限制排查与节点选择指南：彻底解决访问官网提示「当前国家或地区不可用（Gemini is not available）」、账号语言地区错乱以及升级 Gemini Advanced 订阅支付被拒问题，指导如何挑选纯净美国/日本原生节点并开启高精度 Google AI 分流规则。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

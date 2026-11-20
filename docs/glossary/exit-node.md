@@ -1,6 +1,6 @@
 ---
 title: 落地服务器 (Exit Node) - 出口网络属性、流媒体与 AI 解锁及机房带宽
-description: 深度解析落地服务器（Exit / Landing Node）在代理链路中的核心作用、出口 IP 纯净度、原生解锁矩阵与大带宽落地机房选型。
+description: 深度解析落地服务器（Exit / Landing Node）在代理链路中的核心职能与网络属性：全面涵盖出口 IP 纯净度判定、Netflix/Disney+ 流媒体与 ChatGPT/Claude 原生解锁能力矩阵全景分析，以及高并发大带宽优质海外落地机房的选型评估要点与专线机场实用推荐，助力科学选型。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

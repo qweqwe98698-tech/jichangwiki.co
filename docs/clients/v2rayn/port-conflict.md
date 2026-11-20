@@ -1,6 +1,6 @@
 ---
 title: v2rayN 本地端口冲突排查 (10808 / 10809)
-description: 如何排查与解决 v2rayN 本地 SOCKS5/HTTP 监听端口与其他软件（如 Clash、开发环境）冲突问题。
+description: 详解如何排查与解决 v2rayN 默认本地 SOCKS5 与 HTTP 监听端口（10808 / 10809）被 Clash Verge、本地开发调试服务或其他代理工具占用的冲突问题，提供 Windows CMD/PowerShell 端口占用进程定位命令与修改安全监听端口完整实操步骤及避坑要点，避免启动冲突。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

@@ -1,6 +1,6 @@
 ---
 title: 技术资料来源原则与标准参考 (Sources & References)
-description: 说明 JichangWiki 知识库所采信与引用的 IETF RFC 技术标准、开源核心代码仓库（Xray-core、Mihomo、sing-box、Hysteria）及桌面移动客户端官方发布渠道。
+description: 全面说明 JichangWiki 知识库所采信与引用的 IETF RFC 技术标准文献、开源代理核心代码仓库（Xray-core、Mihomo、sing-box 与 Hysteria）及各桌面移动客户端官方安全发布渠道，并公开 42 家收录服务商单日测速抓包快照的数据采集时间与真实性客观核验原则及依据。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket 分流规则与配置模块
-description: Shadowrocket 小火箭分流规则实战教程：掌握基础语法规则、远程分流规则集导入、广告拦截策略与国内直连防断流配置。
+description: Shadowrocket 小火箭分流规则实战教程：详解 DOMAIN-SUFFIX、IP-CIDR 与 GEOIP 等常用规则语法与匹配顺序，演示如何一键导入第三方预置分流规则集、启用去广告模块以及配置国内直连防断流策略，附常见规则覆盖不生效与分流冲突排查实用技巧及日常推荐规则配置，提升日常分流体验。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

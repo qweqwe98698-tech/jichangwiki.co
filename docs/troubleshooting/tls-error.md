@@ -1,6 +1,6 @@
 ---
 title: TLS 证书错误与握手失败排查 - certificate has expired 与时钟同步实战
-description: 深度解析 TLS 握手失败、certificate has expired 证书过期报错、x509 unknown authority 与系统时钟校准实战。
+description: 代理客户端日志频繁报错 TLS 证书错误与握手失败排查实战：快速定位并解决 x509 unknown authority、certificate has expired 证书过期、TLS handshake timeout 报错，提供本地系统时钟同步校准、内核升级与 Reality 协议迁移实用方案。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

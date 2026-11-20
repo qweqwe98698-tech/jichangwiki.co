@@ -1,6 +1,6 @@
 ---
 title: 订阅链接打不开或浏览器无响应怎么办？- 域名阻断、Token 失效与错误码排查
-description: 全面排查浏览器或客户端请求机场订阅 URL 时遇到 ERR_CONNECTION_TIMED_OUT、SSL 证书错误、404 或 502 报错的真实原因与可验证修复路径。
+description: 订阅链接在浏览器打不开或无响应怎么办？全面排查测试订阅 URL 时遇到 ERR_CONNECTION_TIMED_OUT 连接超时、SSL 证书校验错误、HTTP 404 或 502 报错的真实成因，提供浏览器自测判断标准、常见 HTTP 状态码对照表及 3 个极易忽略的 URL 格式粘贴细节，快速恢复连接。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

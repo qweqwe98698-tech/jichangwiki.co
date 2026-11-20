@@ -1,6 +1,6 @@
 ---
 title: 新手如何挑选适合的客户端？- 各系统平台选型全景指南
-description: 针对 Windows、macOS、iOS 和 Android 各操作系统，分析各客户端的易用性、核心功能与上手门槛。
+description: 零基础新手如何挑选适合自己的代理客户端？全面横向对比 Windows（Clash Verge Rev / v2rayN）、macOS（Stash / Surge）、iOS（Shadowrocket / Loon）与 Android（v2rayNG / FlClash）主流工具的易用性、功能定位与上手门槛。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

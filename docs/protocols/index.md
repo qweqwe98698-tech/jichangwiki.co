@@ -1,6 +1,6 @@
 ---
 title: 核心代理协议全景技术百科 - 2026 最新协议演进与选型指南
-description: 2026 最新网络代理协议全景百科与技术选型：深度解析 VLESS、Reality、Hysteria 2、TUIC v5、Trojan、Shadowsocks 与 VMess 技术架构、加密伪装原理与高可用专线机场推荐。
+description: 2026 最新代理协议全景技术百科与选型指南：深度解析 VLESS、Reality、Hysteria 2、TUIC v5、Trojan、Shadowsocks（SS-2022）及 VMess 协议的底层架构演进、加密与流量伪装原理、抗封锁能力评估及全面支持多协议动态调度的高可用专线机场推荐，帮你迅速掌握主流协议特性。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

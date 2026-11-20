@@ -1,6 +1,6 @@
 ---
 title: 高可用防失联备用机场导航与双订阅容灾配置策略
-description: 2026 防断网高可用备份方案：收录支持不限时按量付费的星岛梦与灵猫网络，并附 Clash Verge / Mihomo 双订阅自动故障转移 (Fallback) 策略组配置实战。
+description: 2026 高可用防失联备用机场导航与双订阅容灾配置策略：精选支持流量不过期的不限时按量付费服务商（星岛梦、灵猫网络等），彻底防止主力节点突发维护导致的断网失联，并手把手演示 Clash Verge / Mihomo 双订阅手动与自动故障转移（Fallback）实战配置完整做法，全面保障极端断网时的连接连续性。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

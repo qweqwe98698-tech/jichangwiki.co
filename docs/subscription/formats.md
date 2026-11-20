@@ -1,6 +1,6 @@
 ---
 title: 常见订阅格式全景对比 - Clash YAML、Base64 与 sing-box JSON 选型指南
-description: 详尽对比 Clash Meta YAML、通用 Base64 节点列表、sing-box JSON 与 Surge 配置格式的语法差异、适用客户端清单及导入报错应对方式。
+description: 常见代理订阅格式全景横向对比：详尽解析 Clash Meta YAML 托管配置、通用 Base64 节点链接列表、sing-box JSON 配置文件与 Surge 规则配置四大主流格式的语法结构差异、各自适配的客户端清单、典型脱敏数据示意，以及选错格式导入报错后的快速切换修复完整建议，确保各类端顺利导入。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

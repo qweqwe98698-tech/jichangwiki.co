@@ -1,6 +1,6 @@
 ---
 title: v2rayN TLS 与证书错误解决指南
-description: 解决 v2rayN 日志中提示 x509 certificate error、TLS handshake timeout 与 SNI 校验异常。
+description: v2rayN 日志中提示 x509 certificate error、TLS handshake timeout 与 SNI 校验异常的专项解决指南：按核心排查方向逐一核对本地系统时间与时区误差、客户端 TLS 指纹及版本匹配、防火墙与杀软流量扫描拦截以及服务端证书过期处理方法，助力快速恢复稳定连接。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: hard

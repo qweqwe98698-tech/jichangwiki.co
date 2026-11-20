@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket (小火箭) 常见问题 FAQ 汇总
-description: 汇总 iOS 用户使用 Shadowrocket 小火箭过程中最高频遇到的购买、配置、流媒体、耗电与系统代理疑问。
+description: 汇总 iPhone / iPad 用户使用 Shadowrocket（小火箭）最高频遇到的核心疑难解答 FAQ：全面覆盖美区 Apple ID 购买与更新注意事项、后台常驻耗电优化、Netflix 与 ChatGPT 流媒体解锁排查、四大全局路由模式选择以及系统代理与分流常见误区完整深度解答，消除日常疑难。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

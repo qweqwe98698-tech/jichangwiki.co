@@ -1,6 +1,6 @@
 ---
 title: 开发者与程序员代理加速实战 - Git / Docker / npm / Terminal 终端全透明加速
-description: 深度解析程序员环境下的代理配置、Git clone 慢、Docker pull 超时、npm/pip 下载慢与 TUN 模式终端透明加速实战。
+description: 开发者与程序员全终端代理加速实战指南：提供 Git clone/push、Docker pull 镜像拉取、npm/pnpm、pip、Homebrew 与 Go/Cargo 等常用开发工具终端代理环境变量配置速查表，并重点演示如何通过 TUN 虚拟网卡模式实现全命令行无感透明极速加速与专线选型，提升开发拉取效率。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

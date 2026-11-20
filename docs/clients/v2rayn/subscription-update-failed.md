@@ -1,6 +1,6 @@
 ---
 title: v2rayN 更新订阅失败排查指南 - 代理死锁、User-Agent 与链接校验
-description: 全面解决 Windows v2rayN 更新订阅时提示远程主机强迫关闭连接、网络超时、格式错误或 403/404 失败问题，分清「不通过代理」与「通过代理」更新触发场景。
+description: 全面解决 Windows v2rayN 更新订阅时提示「远程主机强迫关闭了一个现有的连接」、网络超时、格式错误或 HTTP 403/404 失败的排查指南，清晰分辨「不通过代理更新」与「通过代理更新」两种通道的触发场景，并附 User-Agent 与端口冲突实用修复方案及常见报错汇总，迅速恢复同步。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

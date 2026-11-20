@@ -1,6 +1,6 @@
 ---
 title: Clash / Clash Verge 适用的节点服务选型考量：托管订阅、策略组与协议支持
-description: 使用 Clash、Clash Verge Rev 或 Stash 客户端的用户在挑选机场服务时应核对哪些技术条件？对比原生 YAML 托管订阅、Mihomo 协议支持与分流策略组结构。
+description: 针对使用 Clash、Clash Verge Rev 或 Stash 客户端的用户梳理挑选节点服务商必查的 4 项核心技术指标：原生托管 YAML 订阅结构、Mihomo 内核现代协议（VLESS-Reality / Hysteria 2）支持度、内置精细分流策略组以及实操配置与参考选型实用方向，轻松选对。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

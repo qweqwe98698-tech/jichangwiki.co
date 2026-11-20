@@ -1,6 +1,6 @@
 ---
 title: Clash Verge TUN 虚拟网卡模式启用与驱动配置
-description: 详细指导如何在 Clash Verge Rev 中开启 TUN 模式，安装虚拟网卡服务驱动，实现终端命令行、UWP 应用与网络游戏的全量代理接管。
+description: 详细指导如何在 Clash Verge Rev 中开启 TUN 虚拟网卡模式，深度对比 TUN 模式与传统系统代理的接管范围差异，一步步完成服务模式与虚拟网卡驱动安装，实现终端命令行、Docker、UWP 应用与外服联机游戏全量代理接管，附权限与路由冲突排查要点及稳定恢复策略，稳定接管全局流量与日常需求。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

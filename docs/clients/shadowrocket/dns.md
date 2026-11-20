@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket DNS 设置与防 DNS 泄漏指南
-description: 小火箭的 DNS 服务器配置、DoH (DNS over HTTPS) 加密防污染解析与 Fallback 设置。
+description: 详解 iOS Shadowrocket 小火箭的 DNS 服务器配置方案，对比系统默认 DNS 与 DoH（DNS over HTTPS）/ DoT 加密防污染解析差异，并提供避免 DNS 泄露真实物理位置、配置 Fallback 备用解析节点以及解决国内外分流解析缓慢的推荐设置参数和常见避坑技巧。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

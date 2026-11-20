@@ -1,6 +1,6 @@
 ---
 title: 导入订阅失败排查 - Invalid YAML、Base64 报错与格式不匹配修复
-description: 针对客户端导入机场订阅时提示 yaml unmarshal errors、Base64 decode failed、Invalid Subscribe 或无法识别格式等具体报错给出精确逐一修复方法。
+description: 导入订阅失败常见报错精准排查与修复指南：针对客户端导入机场配置时弹出的 yaml unmarshal errors、Base64 decode failed、Invalid Subscribe 或无法识别格式等典型报错逐条破译根因，揭露极高频的 3 个人为粘贴错漏原因并提供 4 步标准排查修复流程。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

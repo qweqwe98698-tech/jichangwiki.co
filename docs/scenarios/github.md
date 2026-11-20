@@ -1,6 +1,6 @@
 ---
 title: GitHub 访问加速与 Git Clone 命令行代理配置
-description: 解决 GitHub 网页打不开、图片加载失败以及 Git 命令行 Clone/Push 超时的终端代理配置方案。
+description: GitHub 访问加速与 Git 命令行代理配置实用指南：彻底解决浏览器访问 GitHub 网页打不开、Releases 大文件下载龟速、头像图片加载失败以及终端执行 git clone / git push 频繁超时报错难题，提供最简可复制的 HTTP/SOCKS5 代理配置命令及一键 TUN 模式透明加速方案。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

@@ -1,6 +1,6 @@
 ---
 title: v2rayN 节点全部超时（真连接全 -1）排查与修复指南
-description: 专项解决 Windows v2rayN 真连接测试全部显示 -1 或 Timeout 的技术根因，涵盖系统时钟不同步、Windows Defender 误杀 xray.exe 核心、订阅过期及 TLS 报错联动排查。
+description: 专项解决 Windows v2rayN 节点测速真连接延迟全部显示 -1 或 Timeout 超时的技术根因与四步诊断方案：涵盖本地系统时钟偏差校准、Windows Defender 误杀 xray.exe 内核、订阅过期或测试目标 URL 异常及 TLS 握手报错联动排查实用清单与验证方法，恢复正常连接。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

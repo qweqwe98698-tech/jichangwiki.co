@@ -1,6 +1,6 @@
 ---
 title: Surge (macOS / iOS) 客户端指南 - 专业级网络调试、抓包与代理功能解析
-description: 解析 Apple 生态高端商业网络工具 Surge（macOS / iOS）的定位、核心特性（HTTPS MitM 抓包调试、Enhanced Mode、Ponte 异地组网）、与其他软件对比及日常机场接入思路。
+description: 深度解析 Apple 生态高端商业网络工具 Surge（macOS / iOS）的专业定位与三大不可替代级核心能力（HTTPS MitM 抓包调试、Enhanced Mode 增强接管与 Ponte 异地组网），客观分析谁适合购买 Surge 及在 Surge 中安全接入机场节点订阅的实用注意事项。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: hard

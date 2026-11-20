@@ -1,6 +1,6 @@
 ---
 title: Hysteria 2 和 TUIC 深度对比 - QUIC 系新一代协议评测
-description: 深度解析两大基于 UDP/QUIC 的新一代极速协议 Hysteria 2 与 TUIC 在拥塞控制、抗丢包、延迟与稳定性上的差异。
+description: 深度对比两大基于 UDP/QUIC 的新一代极速代理协议 Hysteria 2 与 TUIC v5：从核心拥塞控制算法（Brutal 激进发包 vs 标准 BBR）、公网恶劣丢包与晚高峰限速抗压能力、0-RTT 握手延迟、运营商 UDP QOS 适应性及客户端稳定性等维度横向评测对比，助你精准选型新一代协议。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: hard

@@ -1,6 +1,6 @@
 ---
 title: 机场与传统 VPN 的区别 - 技术架构、分流能力与使用场景对比
-description: 详细对比商业机场代理服务与传统商业/企业级 VPN 的本质区别，分析为什么机场在日常跨国浏览与流媒体体验上表现更优。
+description: 商业机场代理服务与传统商业/企业级 VPN 全方位技术对比：从底层加密与传输协议（Shadowsocks/VLESS/Hysteria2 vs OpenVPN/IPSec）、智能 Rule 规则分流能力、流媒体解锁兼容性、抗封锁稳定性以及各自适用边界五个维度，彻底讲透两者本质差异与理性选型建议，助新手看清差异。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

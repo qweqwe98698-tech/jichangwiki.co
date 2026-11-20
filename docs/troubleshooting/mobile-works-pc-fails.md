@@ -1,6 +1,6 @@
 ---
 title: 同一账号手机能翻墙但电脑无法上网？- 系统时钟、代理接管与环境差异排查
-description: 深入分析同一个机场订阅在手机 Shadowrocket/v2rayNG 秒开但 Windows 或 macOS 电脑完全连不上的 5 个高频根因（时间误差、系统代理未开、扩展抢权、防火墙、杀软），附最快排查顺序。
+description: 同一份机场订阅在手机 Shadowrocket 或 v2rayNG 上秒开，在 Windows 或 macOS 电脑上却完全连不上或打不开网页？深入剖析手机与电脑网络环境的五大核心差异（系统时钟同步误差、系统代理开关未启用、浏览器扩展抢权、防火墙与杀软拦截），附按优先级执行的 5 步快速修复，迅速恢复联网。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

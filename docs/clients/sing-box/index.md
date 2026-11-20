@@ -1,6 +1,6 @@
 ---
 title: sing-box 通用代理核心知识中心 - JSON 配置架构与跨平台客户端生态
-description: 深度解读新一代开源通用网络代理核心 sing-box 的架构特点、JSON 配置文件结构（inbounds/outbounds/route/dns）、现代协议支持及衍生客户端生态。
+description: 深度解读开源通用网络代理核心 sing-box 架构特点、JSON 配置文件结构（inbounds、outbounds、route 与 dns）、对 VLESS-Reality 和 Hysteria 2 现代协议支持及衍生跨平台客户端地图，对比其与 Mihomo 的适用差异、性能优势与核心选型建议。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

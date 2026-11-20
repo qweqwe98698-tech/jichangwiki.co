@@ -1,6 +1,6 @@
 ---
 title: SOCKS5 基础代理协议百科 - RFC 1928 原理、UDP 转发与本地监听端口作用
-description: 深度解读 IETF RFC 1928 标准 SOCKS5 协议的三段握手流程、为什么既支持 TCP 又支持 UDP、与 HTTP 代理的区别，以及为什么绝不能把裸 SOCKS5 当翻墙协议暴露在公网使用。
+description: 深度解读 IETF RFC 1928 标准 SOCKS5 协议的三段握手与协商工作机制，详细对比 SOCKS5 与 HTTP 代理在支持 UDP 转发与传输层特性上的区别，教你分清客户端本地监听口填写规范，并严正警示为什么绝不能将裸 SOCKS5 协议直接暴露在公网用于跨境数据传输，帮开发者与用户正确配置使用。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

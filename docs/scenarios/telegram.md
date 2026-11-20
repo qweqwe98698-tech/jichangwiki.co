@@ -1,6 +1,6 @@
 ---
 title: Telegram (电报) 连接与收不到短信验证码排查
-description: Telegram 客户端显示 Connecting、无法连接 DC 数据中心、国内手机号 +86 接收验证码异常排查。
+description: Telegram（电报）客户端一直显示 Connecting 转圈连接中、无法连接 DC 数据中心及国内 +86 手机号收不到登录短信验证码的全面排查指南：涵盖电脑端与手机端内置 SOCKS5/HTTP 本地代理端口手填方法、网络协议阻断应对以及新旧设备接码验证全套实操完整解决技巧，快速恢复消息收发。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

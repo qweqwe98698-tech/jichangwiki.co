@@ -1,6 +1,6 @@
 ---
 title: Clash Verge / Clash Verge Rev 完整指南：订阅导入、TUN 模式与故障排查
-description: Clash Verge 与 Clash Verge Rev 中文知识中心：涵盖 Windows/macOS/Linux 安装包下载、Clash Verge 订阅链接导入与自动更新、TUN 虚拟网卡、DNS 防污染及 Timeout 超时排错。
+description: Clash Verge 与 Clash Verge Rev 中文完整知识中心：全面覆盖 Windows/macOS/Linux 官方安装包下载、Clash Verge 订阅链接导入与自动更新、TUN 虚拟网卡服务模式、Fake-IP DNS 防污染以及节点全红 Timeout 超时排错指南与新手直达入口。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

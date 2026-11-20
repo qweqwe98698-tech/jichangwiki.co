@@ -1,6 +1,6 @@
 ---
 title: v2rayN (Windows) 完整知识树
-description: Windows 平台最主流的开源代理客户端 v2rayN 全景教程、下载安装、Xray 内核配置、TUN 模式、分流路由与故障排错手册。
+description: Windows 平台经典开源代理客户端 v2rayN 完整知识树：全面覆盖官方安全下载渠道与 .NET 环境准备、Xray 与 sing-box 双核心切换配置、TUN 虚拟网卡模式启用、绕过大陆分流路由规则设置以及节点真连接全 -1 超时等高频报错排错全套实战手册，助你零门槛快速上手，快速掌握核心操作。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

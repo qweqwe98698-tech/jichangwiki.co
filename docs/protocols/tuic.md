@@ -1,6 +1,6 @@
 ---
 title: TUIC v5 协议技术深度解析 - 原生 QUIC 0-RTT 握手与低延迟多路复用
-description: 深度解析 TUIC v5 (QUIC 代理) 协议技术架构、原生 0-RTT 快速重连、BBR 拥塞控制与 Hysteria 2 的核心差异对比。
+description: 深度解析 TUIC v5（QUIC 代理）协议技术架构、原生 0-RTT 快速重连握手时序与多路复用无队头阻塞机制，全面对比 TUIC v5 与 Hysteria 2 在 BBR 拥塞控制策略、移动网络切换延迟与恶劣丢包环境表现上的核心差异，并附 Clash Verge 标准配置示范及专线机场推荐。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

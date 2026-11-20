@@ -1,6 +1,6 @@
 ---
 title: v2rayN 连接失败与核心崩溃排错清单
-description: v2rayN 连接失败与 Core Exited 故障修复：快速排查缺少 .NET 依赖、端口冲突、内核未下载或被杀毒软件拦截导致的核心崩溃。
+description: v2rayN 启动连接失败与日志报错 Core Exited 核心崩溃排错清单：教你快速定位日志报错关键行，逐一排查缺少 .NET 8 桌面运行时依赖、本地 10808/10809 端口冲突、基础版未下载 Xray/sing-box 内核文件或被杀毒软件误杀拦截等常见故障并迅速恢复正常运行，消除报错。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

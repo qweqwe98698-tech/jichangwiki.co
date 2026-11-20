@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket (小火箭) 完整知识树
-description: iOS 平台最普及代理客户端 Shadowrocket（小火箭）的购买下载、扫码订阅、全局路由配置、规则分流与常见故障诊断手册。
+description: iOS 平台最普及代理客户端 Shadowrocket（小火箭）完整知识树：系统整理美区 App Store 安全下载安装、URL 与扫码导入订阅、四大全局路由模式、分流规则语法、DoH 防 DNS 泄露配置以及节点超时 Timeout 故障诊断全套实战手册，助力苹果用户快速上手稳定配置，快速掌握核心技巧。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

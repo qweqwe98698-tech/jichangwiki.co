@@ -1,6 +1,6 @@
 ---
 title: Trojan 和 Shadowsocks 深度对比 - 公网伪装与专线内网的取舍
-description: Trojan 与 Shadowsocks 协议的设计思想、公网抗审查能力、加解密延迟与专线场景适配对比。
+description: 深度对比经典代理协议 Trojan 与 Shadowsocks 的核心设计思想与定位取舍：从 TLS 443 端口 HTTPS 流量伪装能力、公网抗深度包检测表现、加解密 CPU 与握手延迟开销，到 IEPL 内网专线场景的高吞吐适配差异，为你提供一目了然的核心技术选型直观对照总表，助你科学抉择与场景匹配。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

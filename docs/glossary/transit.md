@@ -1,6 +1,6 @@
 ---
 title: 中转隧道 (Transit Relay) - 加密隧道协议、公网中转与专线架构深度对比
-description: 深度解析中转隧道（Transit Relay / 端口转发）技术原理、GOST / TLS Tunnel / Wstunnel 加密协议、公网中转与专线实测对比。
+description: 深度解析中转隧道（Transit Relay / 端口转发）的数据封装与传输流向原理，全面对比 GOST、TLS Tunnel 与 Wstunnel 等主流中转加密技术，通过中转隧道、物理内网专线与公网直连的实测指标对照，帮预算有限的用户挑选高性价比月付中转与混合专线实用方案，兼顾成本与晚高峰稳定性。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

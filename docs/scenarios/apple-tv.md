@@ -1,6 +1,6 @@
 ---
 title: Apple TV 与电视盒子流媒体加速实战 - 旁路由配置、原生 4K 解锁与投屏
-description: 深度解析 Apple TV、Google TV、Android 电视盒子流媒体科学上网全攻略、OpenWrt 旁路由透明代理配置与 4K HDR 专线机场推荐。
+description: Apple TV（tvOS）、Google TV 与 Android 电视盒子流媒体加速实战全攻略：详细图解家里如何通过 OpenWrt 软路由与旁路由网关实现大屏设备透明代理、无痛安装客户端支持界面，并附 4K HDR 杜比视界高码率秒开及 Netflix/Disney+ 全解锁大带宽专线机场实用推荐。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

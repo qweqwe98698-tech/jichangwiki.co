@@ -1,6 +1,6 @@
 ---
 title: Hysteria 2 协议深度解析 - 魔改 BBR 拥塞控制、抗恶劣丢包与突破限速
-description: 深度解析 Hysteria 2 协议技术架构、基于 QUIC/UDP 的自研 Brutal 拥塞控制算法、突破运营商晚高峰 QoS 丢包限速实战与配置。
+description: 深度解析 Hysteria 2 协议技术架构、基于 QUIC/UDP 的自研 Brutal 拥塞控制算法如何暴力突破运营商晚高峰 QoS 丢包限速，对比传统 TCP 协议吞吐实测表现，并附 Clash Verge / Mihomo 标准 YAML 配置示例与常见 UDP 阻断故障排查清单及专线推荐。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

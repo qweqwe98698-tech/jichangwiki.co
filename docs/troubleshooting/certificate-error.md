@@ -1,6 +1,6 @@
 ---
 title: SSL / TLS 证书校验异常排查 - 连接不是私密连接与握手失败修复
-description: 解决浏览器出现 NET::ERR_CERT_AUTHORITY_INVALID（您的连接不是私密连接）或代理节点 TLS 握手失败的问题，区分客户端 MitM 证书、杀软拦截与系统时钟偏差三类根因。
+description: SSL / TLS 证书校验异常专项排查指南：深入解决浏览器频繁弹出 NET::ERR_CERT_AUTHORITY_INVALID（您的连接不是私密连接）或代理日志提示 TLS 握手失败问题，清晰区分客户端 MitM 解密证书未信任、杀毒软件 HTTPS 扫描拦截与本地系统时钟偏差三类根因及对应修复步骤。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: hard

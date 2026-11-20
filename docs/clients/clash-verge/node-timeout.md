@@ -1,6 +1,6 @@
 ---
 title: Clash Verge 节点全部超时 (Timeout) 专属排查：Mihomo 内核、TUN 与 DNS 修复
-description: 专治 Clash Verge / Clash Verge Rev 测速全红 Timeout：检查 Windows 时钟同步、Mihomo 内核权限、Mixed Port 7897 占用、TUN 服务模式与 default-nameserver DNS 死锁。
+description: 专治 Clash Verge / Clash Verge Rev 节点测速全红 Timeout 超时的专属排查手册：精准区分单节点异常与全红断联，指导排查 Windows 系统时钟同步偏差、Mihomo 内核杀软拦截、7897 Mixed Port 端口占用、TUN 服务权限与 DNS 死锁等故障。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

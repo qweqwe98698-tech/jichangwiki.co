@@ -1,6 +1,6 @@
 ---
 title: Clash 客户端多平台下载与安装指南 - Windows / macOS / Android / iOS
-description: 深度提供 Clash 各分支客户端（Clash Verge Rev、Flclash、ClashX.Meta、Shadowrocket）多平台安全下载与防坑安装全攻略。
+description: 深度提供 Clash 系列各分支开源客户端（Clash Verge Rev、FlClash、ClashX.Meta、Stash 及 Shadowrocket）在 Windows、macOS、Android 与 iOS 全平台的安全下载渠道、安装包架构核对（x64/ARM64）、首次启动初始化步骤及防山寨软件避坑指南。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

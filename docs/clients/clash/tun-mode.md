@@ -1,6 +1,6 @@
 ---
 title: Clash TUN 模式实战配置 - Wintun 驱动、外服游戏 UDP 加速与常见报错
-description: 深度解析 Clash TUN 虚拟网卡模式在 Windows / macOS 上的安装启用、Wintun 驱动配置、外服游戏加速与报错解决。
+description: 深度解析 Clash TUN 虚拟网卡模式在 Windows 与 macOS 上的安装启用步骤、Wintun 驱动与服务模式（Service Mode）权限配置、命令行终端与 UWP 应用全量流量接管原理，以及外服竞技游戏 UDP 加速调优和常见虚拟网卡启动报错解决实战，附相关高可用机场搭配参考指南。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

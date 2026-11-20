@@ -1,6 +1,6 @@
 ---
 title: Clash Verge 更新订阅教程：手动刷新、自动定时更新与失败修复
-description: 详细说明如何在 Clash Verge / Clash Verge Rev 中手动刷新订阅、设置 12/24 小时自动定时更新间隔，以及解决更新订阅时出现的代理死锁与 404 报错。
+description: 详细说明如何在 Clash Verge 与 Clash Verge Rev 中手动刷新节点订阅、配置 12/24 小时自动定时更新间隔以防止节点失联，并针对更新订阅时常见的「代理死锁」、HTTP 404/403 报错与本地覆写策略失效提供完整故障定位与修复对照表及后续关联排错操作衔接，避免节点失联。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

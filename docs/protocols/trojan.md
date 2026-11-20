@@ -1,6 +1,6 @@
 ---
 title: Trojan 协议深度解析 - 经典 HTTPS 流量伪装原理与落后成因
-description: 深度解析 Trojan 协议技术架构、Nginx 443 端口双向分流伪装原理、与 VLESS-Reality 的演进差异与高可用机场推荐。
+description: 深度解析 Trojan 协议基于 Nginx 443 端口的经典 HTTPS 流量伪装与双向分流反探测底层架构，全面对比 Trojan 与现代 VLESS-Reality 协议在证书维护成本及抗封锁演进上的差异，并提供 Mihomo 客户端标准 YAML 配置示例与高抗封锁专线及混合协议机场推荐参考。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

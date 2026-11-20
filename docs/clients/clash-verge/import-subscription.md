@@ -1,6 +1,6 @@
 ---
 title: Clash Verge 订阅怎么导入？2026 订阅链接获取、配置教程与报错修复
-description: 手把手教你获取与导入 Clash Verge / Clash Verge Rev 订阅链接：包含 Clash YAML 订阅格式识别、一键导入激活四步教程、自动定时更新与 Fetch Failed/Invalid YAML 报错修复。
+description: 手把手教你获取并导入 Clash Verge / Clash Verge Rev 订阅链接：涵盖 Clash YAML 格式辨别、一键导入与复制 URL 四步图文实操、12/24 小时自动定时更新设置，以及导入后必做的 3 项联网校验与 Fetch Failed/Invalid YAML 报错排查。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

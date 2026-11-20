@@ -1,6 +1,6 @@
 ---
 title: VMess 协议深度解析 - 历史贡献、架构开销、特征识别与为什么被淘汰
-description: 深度解析 V2Ray 经典 VMess 协议底层结构、对称二次加密带来的性能开销、16 字节认证头特征被主动探测识别成因与现代协议替代。
+description: 深度解析 V2Ray 经典 VMess 协议的底层数据帧结构与历史技术贡献，剖析其强依赖系统时间、双重对称加密带来的高 CPU 性能损耗以及 16 字节认证头特征易被 GFW 主动探测精准识别而遭淘汰的成因，指明向现代 VLESS-Reality 及 IEPL 专线升级的实用迁移方向，确保长期稳定抗封锁。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

@@ -1,6 +1,6 @@
 ---
 title: FlyingBird (飞鸟机场) 2026 深度评测：资费架构梳理、优惠码及缺官方直达入口提醒（#32）
-description: 2026 FlyingBird（飞鸟机场）档案梳理：2022 年老牌背景的 IPLC+Shadowsocks 纯第三方订阅机场，青铜月付 ¥15/100GB 起，整理 theo(9折)/year85(年付85折) 优惠码；严格披露目前清单暂未收录经验证直达官网入口且缺少近30日抓包实测。
+description: 2026 FlyingBird（飞鸟机场）深度档案梳理（#32）：2022 年老牌背景的 IPLC+Shadowsocks 纯第三方订阅机场，青铜月付 ¥15/100GB 起，整理历史 4 档资费与 theo（9折）/ year85（年付85折）优惠码；严格披露暂缺核验官网入口及近 30 日实测抓包。
 updated: '2026-11-12'
 keywords: ['FlyingBird', '飞鸟机场', 'FlyingBird评测', 'theo优惠码', 'year85', '防钓鱼警告']
 faq:

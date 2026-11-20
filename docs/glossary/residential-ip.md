@@ -1,6 +1,6 @@
 ---
 title: 住宅 IP (Residential IP) - 家宽网络属性、电商防封与 AI 降风控
-description: 深度解析住宅家庭宽带 IP (Residential IP)、ISP 与机房托管属性对比、TikTok 运营与 ChatGPT 防风控实战。
+description: 深度解析住宅 IP（Residential IP / 家宽网络属性）与数据中心机房 IP 的核心区别与风控信任度差异，系统阐述高纯净度原生家宽 IP 在 TikTok 跨境短视频运营防限流、独立站多店铺防关联以及降低 ChatGPT/Claude 风控拦截中的三大实战原则与推荐，避开数据中心机房 IP 风控陷阱。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

@@ -1,6 +1,6 @@
 ---
 title: v2rayN DNS 设置与防污染配置
-description: v2rayN 内置 DNS 调优与分流配置指南：掌握 DoH 加密解析设置、国内直连域名与国外代理域名分流防污染配置方案。
+description: v2rayN 内置 DNS 调优与标准分流架构配置指南：详细讲解 DoH（DNS over HTTPS）加密防污染解析设置、GeoSite 国内外域名分流查询策略、FakeDNS 开启条件，以及彻底避免开启代理后访问国内网站变慢或暴露真实查询记录的防 DNS 泄露完整实用配置方案，提升访问安全性与防泄露。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

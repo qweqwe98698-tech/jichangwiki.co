@@ -1,6 +1,6 @@
 ---
 title: v2rayN 路由规则与绕过大陆 IP 配置
-description: 解析 v2rayN 底部「路由」选项的「绕过大陆」、「全局」与「黑名单」模式，以及 GeoSite / GeoIP 规则库更新。
+description: 深度解析 v2rayN 底部「路由」状态栏中「绕过大陆（Bypass Mainland）」、「全局（Global）」与「黑名单」三种核心模式的底层分流规则逻辑，并指导如何一键更新 GeoSite 与 GeoIP 路由规则数据库，确保国内外站点分流精准且不消耗多余节点流量及防止误判，优化日常访问体验。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

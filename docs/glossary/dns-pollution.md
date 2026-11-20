@@ -1,6 +1,6 @@
 ---
 title: DNS 污染 (DNS Pollution) - 抢答伪造机制、Fake-IP 原理与彻底防污染方案
-description: 深度解析 DNS 污染机制、GFW 旁路 UDP 抢答虚假 IP 原理、Fake-IP 与 DoH 加密防污染技术实战。
+description: 深度解析 DNS 污染（DNS Pollution）的旁路 UDP 抢答伪造虚假 IP 工作流程，系统梳理现代代理客户端对抗 DNS 污染的 Fake-IP 虚拟地址池、DoH/DoT 加密解析及分流规则四大核心技术，并附常见 DNS 解析异常与打不开网页的高频故障排查对照表及精选推荐，确保域名解析准确。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

@@ -1,6 +1,6 @@
 ---
 title: 广播 IP (Broadcast IP) 技术百科 - BGP 跨区宣告原理、优劣势与流媒体影响
-description: 解析广播 IP（Broadcast IP）的 BGP 跨区路由宣告机制、与本土原生 IP（Native IP）的区别、为什么亚太小机房广泛采用广播 IP，以及它对 Netflix、ChatGPT 和延迟的真实影响。
+description: 深度解析广播 IP（Broadcast IP）的 BGP 跨区路由宣告技术原理、与本土原生 IP（Native IP）及住宅 IP 的三维差异对比，阐明为什么亚太小机房普遍大量采用广播 IP，以及它对 Netflix 流媒体版权、ChatGPT 访问风控与实际网络延迟的真实影响及误解澄清，帮用户准确辨别实际解锁能力。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

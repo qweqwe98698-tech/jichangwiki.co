@@ -1,6 +1,6 @@
 ---
 title: v2rayN 真连接延迟与测速方法
-description: 详细讲解 v2rayN 中 TCP Ping (Ctrl+R)、真连接延迟 (Ctrl+O) 与测速 (Ctrl+T) 的区别与正确使用姿势。
+description: 详细拆解 v2rayN 三种核心测速模式的本质区别与快捷键用法：全面对比 TCP Ping（Ctrl+R）、真连接延迟（Ctrl+O）与下载测速（Ctrl+T）的底层握手验证原理，教你准确识别只有 TCP 通但实际无法翻墙的假延迟节点，避免被虚假低延迟数据误导而严重影响日常使用体验，精准判断节点可用性。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

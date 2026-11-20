@@ -1,6 +1,6 @@
 ---
 title: QoS 运营商限速 (Quality of Service) - 晚高峰拥堵成因与突破策略
-description: 深度解析运营商 QoS 限速机制、晚高峰国际出口公网拥堵成因、UDP 单向阻断排查与专线/Hysteria2 解决方案。
+description: 深度解析运营商 QoS 限速（Quality of Service）在晚高峰国际出口的流量优先级金字塔与拥堵丢包成因，对比剖析 QoS 对传统 TCP 与 UDP 代理协议的实际速率影响，并系统梳理突破晚高峰国际出口限速的两大终极解法（企业内网专线与 Hysteria 2 协议），帮助改善晚高峰网络卡顿。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

@@ -1,6 +1,6 @@
 ---
 title: VLESS 协议完整技术解析 - 无状态握手、XTLS-Vision 流控与 2026 演进
-description: 深度解析 VLESS 协议底层原理、与 VMess 协议的架构差异、XTLS-Vision 0 损耗直通技术、配置规范与 2026 标配 VLESS 旗舰机场推荐。
+description: 深度解析 VLESS 现代代理协议无状态轻量握手与数据帧结构解剖，全面对比 VLESS 与 VMess 的底层架构差异，重点讲解 XTLS-Vision（视界）技术实现 0 损耗直通突破双重加密瓶颈的革命性突破，并附客户端规范配置示例与 2026 标配 VLESS 旗舰机场实用推荐，助力掌握现代高速协议特性。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

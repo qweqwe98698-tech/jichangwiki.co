@@ -1,6 +1,6 @@
 ---
 title: CN2 GIA 高级公网线路百科 - 与 CN2 GT 区别、59.43 路由判别及选型局限
-description: 深度剖析中国电信最高级别公网出海产品 CN2 GIA（Global Internet Access），对比 CN2 GT 半程优化的本质差异、如何通过双向 59.43 路由验证真伪，以及它与 IEPL 内网专线的核心定位区分。
+description: 深度剖析中国电信最高级别公网出海产品 CN2 GIA（Global Internet Access）的技术架构，通过对比表分清 CN2 GIA、CN2 GT 半程优化与普通 163 直连的本质差异，教你通过双向 59.43 路由追踪验证真伪，并明确区分其与 IEPL 内网专线的核心定位边界，避免误选半程优化线路。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

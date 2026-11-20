@@ -1,6 +1,6 @@
 ---
 title: Clash 是什么？- 规则代理内核起源、底层架构、生态演进与现代替代方案
-description: 深度解析 Clash 代理内核底层架构、Rule 分流引擎、Fake-IP DNS 机制、原版停更历史、现代 Mihomo (Meta) 演进与 2026 最佳专线机场推荐。
+description: 深度解析 Clash 代理内核的底层数据流向与架构设计、Rule 规则分流引擎与 Fake-IP DNS 机制三大技术创新，系统梳理从原版 Clash 开源归档到现代社区主力 Mihomo（Clash.Meta）内核的演进脉络，并附 2026 主流 Clash GUI 客户端选型矩阵与高速专线机场搭配参考。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

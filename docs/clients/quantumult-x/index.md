@@ -1,6 +1,6 @@
 ---
 title: Quantumult X (圈X) 客户端指南 - 策略组、HTTP 重写与脚本引擎定位解析
-description: 解析经典 iOS 网络工具 Quantumult X（圈X）的核心能力、服务器节点订阅与分流策略体系区别、与其他苹果端工具对比及订阅导入常见误区。
+description: 深入解析 iOS 经典代理工具 Quantumult X（圈X）的四层核心配置框架，详细对比其与 Shadowrocket、Stash 及 Loon 的功能边界差异，拆解节点订阅、分流策略组、HTTP 重写与脚本引擎的正确使用定位，并提醒新手导入机场订阅最常踩的 3 个误区与排错方法，帮苹果用户精准上手。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: hard

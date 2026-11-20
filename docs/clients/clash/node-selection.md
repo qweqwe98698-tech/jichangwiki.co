@@ -1,6 +1,6 @@
 ---
 title: Clash 节点选择策略与测速指南 - select / url-test / fallback 策略组实战
-description: 深度解析 Clash 策略组类型（select 手动选择、url-test 自动延迟、fallback 故障转移、load-balance 负载均衡）及日常调优。
+description: 深度解析 Clash 与 Mihomo 内核四大核心策略组类型（select 手动选择、url-test 自动最低延迟测速、fallback 自动故障转移、load-balance 负载均衡）的触发条件与 YAML 参数配置细节，教你结合流媒体解锁、AI 访问与日常稳定需求进行策略组实用调优及专线搭配推荐。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

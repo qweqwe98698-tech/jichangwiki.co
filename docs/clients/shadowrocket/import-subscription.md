@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket (小火箭) 导入订阅链接与二维码扫描完整教程
-description: 详尽讲解 iPhone / iPad Shadowrocket（小火箭）通过 URL 手动订阅导入、剪贴板自动识别、二维码扫码以及 Safari 一键添加节点配置的全部操作与失败应对方案。
+description: 详尽讲解 iPhone 与 iPad 版 Shadowrocket（小火箭）通过 URL 手动添加订阅导入、剪贴板自动识别、桌面扫码一键添加节点以及 Safari 唤起导入的完整操作步骤，并汇总导入后遇到无节点、剪贴板读取拦截或链接失效时的 3 个常见卡点与快速应对排错方案、注意事项及实用 FAQ。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

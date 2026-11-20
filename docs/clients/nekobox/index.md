@@ -1,6 +1,6 @@
 ---
 title: NekoBox 客户端指南 (Android / Windows) - sing-box 内核与现代协议配置
-description: 全面解读开源代理客户端 NekoBox for Android（及桌面端 Nekoray）的 sing-box 内核特性、Material You UI、兼容订阅格式及导入排错方案。
+description: 全面解读开源代理客户端 NekoBox for Android（及桌面端 Nekoray）基于 sing-box 内核的技术优势、Material You 现代界面体验、对 VLESS-Reality 与 Hysteria 2 现代协议的完整支持、兼容订阅格式、快速导入流程及常见问题排查对比实用指南。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

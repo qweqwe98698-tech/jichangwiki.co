@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 2026 机场推荐与代理深度评测、Clash Verge 订阅与网络导航百科
-description: JichangWiki.co 中文网络工具与代理技术百科：提供 2026 机场推荐与 42 家品牌全景实测对比、机场网址导航、Clash Verge 订阅导入教程、节点地区推荐及 Timeout 故障排查。
+description: JichangWiki.co 中文网络工具、代理评测与机场导航百科中心：提供 2026 权威机场推荐总榜与 42 家服务商晚高峰实测抓包对比、免翻墙实时网址导航、Clash Verge / v2rayN / 小火箭订阅教程、IEPL 专线原理及节点全部超时 Timeout 30 秒极速排查，助你一站掌握选型与排错。
 ---
 
 <script setup>

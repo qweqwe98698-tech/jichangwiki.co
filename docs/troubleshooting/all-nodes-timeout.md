@@ -1,6 +1,6 @@
 ---
 title: 节点全部超时 (Timeout / -1ms / 全红) 怎么办？5 步定位根因与一键修复
-description: 客户端节点测速全部显示 Timeout、-1ms 或全红连不上？一文按发生概率排查系统时间同步（占 85%）、订阅到期、杀毒软件拦截 Mihomo/Xray 内核、DNS 污染与网络阻断，附 Clash Verge/v2rayN/小火箭修复步骤。
+description: 代理客户端所有节点测速全部显示 Timeout、-1ms 或全红完全连不上怎么办？一文按发生概率从高到低系统排查本地系统时间不同步（占 85% 根因）、订阅套餐到期、杀毒软件误杀拦截 Mihomo/Xray 内核、DNS 污染与网络阻断，附 Clash Verge、v2rayN 与小火箭修复，快速恢复。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

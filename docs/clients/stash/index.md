@@ -1,6 +1,6 @@
 ---
 title: Stash (iOS / macOS / tvOS) 指南 - 苹果生态下的 Clash 订阅完美平替
-description: 详尽介绍 Apple 全平台客户端 Stash 的特点、如何直接导入机场 Clash YAML 订阅链接、iCloud 配置同步以及和 Shadowrocket/Surge/Loon 的适用场景对比。
+description: 详尽介绍 Apple 全平台客户端 Stash（iOS / macOS / tvOS）的核心竞争优势、如何 3 步直接导入机场 Clash YAML 订阅链接实现规则分流、iCloud 多设备配置同步体验，并与 Shadowrocket、Surge 及 Loon 进行深度横向对比，帮苹果用户精准完成选型与上手。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

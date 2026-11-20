@@ -1,6 +1,6 @@
 ---
 title: 学术科研与文献检索代理指南 - Google Scholar / Sci-Hub / arXiv 极速下载
-description: 深度解析高校研究生与科研人员访问 Google Scholar (谷歌学术)、Sci-Hub、arXiv、IEEE 论文下载与低延迟稳定机场推荐。
+description: 高校研究生与科研人员学术文献检索代理指南：彻底解决访问 Google Scholar（谷歌学术）、Sci-Hub、arXiv 预印本及 IEEE/Springer 数据库连接超时、文献 PDF 大文件下载中断以及人机验证频繁弹出问题，提供高稳定低延迟的学术科研专线配置、分流建议与节点推荐方案，助力顺畅检索科研文献。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

@@ -1,6 +1,6 @@
 ---
 title: 住宅 IP / 家宽 IP (Residential IP) 深度解析 - 与机房 IP 区别及高风控应用场景
-description: 系统讲解海外住宅 IP（Residential / 家宽 ISP IP）的定义、为什么在欺诈风控分（Fraud Score）面前远低于 AWS/阿里云等数据中心机房 IP，以及在 TikTok、跨境电商与 AI 防风控中的合理边界。
+description: 系统讲解海外住宅 IP（Residential / 家宽 ISP IP）的底层属性定义与三层 IP 风险等级图谱，解释为何住宅 IP 在欺诈分（Fraud Score）检测中远低于 AWS/阿里云等数据中心机房 IP，深入剖析其在 TikTok、跨境电商与 AI 防风控中的合理边界及避开「伪住宅」宣传指南。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: hard

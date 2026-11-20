@@ -1,6 +1,6 @@
 ---
 title: HTTP / HTTPS 代理协议技术百科 - CONNECT 隧道机制与与系统代理关联
-description: 详细解释标准 HTTP 与 HTTPS 代理协议的工作原理、HTTP CONNECT 明文隧道握手过程，以及它和 SOCKS5 在支持 UDP、传输层次及系统代理设置（7890/7897）中的定位区别。
+description: 详细解释标准 HTTP 与 HTTPS 代理协议的工作原理、HTTP CONNECT 明文隧道建立加密连接的三段握手过程，深度对比 HTTP 代理与 SOCKS5 在支持 UDP 转发、工作网络层次以及桌面客户端本地系统代理端口（7890 / 7897）中的定位区别与开发日常实用提醒，厘清基础协议差异。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

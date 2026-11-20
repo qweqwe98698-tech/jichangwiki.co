@@ -1,6 +1,6 @@
 ---
 title: Reality 协议底层深度解析 - 借用证书原理、抗主动探测与配置规范
-description: 深度解析 Xray-Reality 协议技术架构、借用合规大型网站 TLS 证书免购买域名原理、抗 GFW 主动探测机制与 2026 Reality 专线机场推荐。
+description: 深度解析 Xray-Reality 协议底层技术架构与双向握手防探测防御时序，揭示其借用合规大型海外网站 TLS 证书实现免购买域名、无额外 TLS 指纹特征的革命性原理，剖析其对抗 GFW 主动探测的核心优势，并附客户端 Reality 标准配置参数解剖与常见报错排查实用清单，助力安全部署与高效排错。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: hard

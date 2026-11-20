@@ -1,6 +1,6 @@
 ---
 title: Clash / Mihomo 内核 - 历史演进、内核架构分支与现代协议支持全景
-description: 深度解析原版 Clash 开源历史、Clash Premium 闭源版本、现代社区分叉主力 Mihomo (Clash.Meta) 内核技术架构与 VLESS/Reality 支持对比。
+description: 深度解析 Clash / Mihomo 内核的历史演进脉络与架构分支：全面梳理原版 Clash 开源架构、已归档的 Clash Premium 闭源内核与现代社区主力分支 Mihomo（Clash.Meta）在 VLESS、Reality、Hysteria 2 与 Sniffer 协议支持上的核心技术对比。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

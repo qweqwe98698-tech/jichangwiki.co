@@ -1,6 +1,6 @@
 ---
 title: 已连接节点但打不开网页？- 2026 最新系统代理残留与 DNS 劫持排查
-description: 深度解决代理客户端显示连接成功但浏览器打不开网页、ERR_PROXY_CONNECTION_FAILED 报错、DNS 解析失败与一键修复。
+description: 代理客户端显示已连接节点且延迟正常，但打开浏览器依然完全无法访问任何网页的深度排查清单：重点解决 ERR_PROXY_CONNECTION_FAILED 报错、异常退出导致的系统代理残留、DNS 解析劫持以及浏览器安装多个代理扩展插件互相抢权冲突的一键诊断与快速恢复实战方案，彻底消除假连接断网困扰。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: easy

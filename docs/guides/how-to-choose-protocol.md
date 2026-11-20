@@ -1,6 +1,6 @@
 ---
 title: 如何选择最适合的代理协议？- 场景化选型指南
-description: 如何选择适合自己的代理协议：横向对比 VLESS、Shadowsocks、Hysteria 2、Trojan 在加密开销、抗封锁能力与晚高峰吞吐表现。
+description: 如何根据真实网络环境与使用场景挑选最适合的代理协议？全面横向对比 VLESS（Reality）、Shadowsocks（SS-2022）、Hysteria 2、TUIC v5 与 Trojan 在加解密性能开销、公网抗封锁能力、晚高峰恶劣丢包吞吐稳定性及各客户端兼容性上的真实表现与选型对照，轻松匹配最佳协议。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

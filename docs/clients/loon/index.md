@@ -1,6 +1,6 @@
 ---
 title: Loon (iOS) 代理与分流插件客户端指南 - 核心特点、订阅导入与选型对比
-description: 系统讲解 iOS 平台现代代理与抓包工具 Loon 的价格定位、模块化插件（Plugin）体系、常见机场订阅兼容格式及与 Shadowrocket/Stash 的对比建议。
+description: 系统讲解 iOS 平台现代网络代理与 HTTP 抓包调试工具 Loon 的 App Store 定位、模块化插件（Plugin）与脚本扩展体系、常见机场订阅格式兼容性及策略组配置方法，并与 Shadowrocket、Stash 和 Quantumult X 进行横向选型对比，附新手常见问题完整解答。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

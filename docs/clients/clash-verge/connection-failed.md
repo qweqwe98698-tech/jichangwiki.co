@@ -1,6 +1,6 @@
 ---
 title: Clash Verge 启动报错或内核连接失败排查 - 端口占用、服务模式与配置崩溃修复
-description: 系统解决 Clash Verge Rev 启动时提示 Core Start Error、7897 端口被占用、TUN 服务模式安装失败或 YAML 语法报错导致的无法运行问题（区别于单个节点 Timeout）。
+description: 系统解决 Clash Verge Rev 启动时提示 Core Start Error、Mihomo 内核连接失败、7897 混合端口被占用、TUN 服务模式安装失败或订阅 YAML 语法错误导致的配置崩溃无法运行问题（精准区分于单个代理节点测速超时 Timeout），附详细四步定位与快速恢复流程。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

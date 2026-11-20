@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket (小火箭) 适用的机场节点与服务选型考量指南
-description: 专门针对 iPhone / iPad Shadowrocket（小火箭）用户的机场服务挑选 checklist：涵盖通用 Base64 / QR 二维码快捷支持、4G/5G 蜂窝抗 UDP 拦截 TCP 节点储备与多设备兼容考量。
+description: 专门针对 iPhone / iPad Shadowrocket（小火箭）用户的机场节点服务选型考量指南：梳理通用 Base64 与二维码快捷导入兼容性、移动 4G/5G 蜂窝网络抗 UDP 限速的 TCP 节点储备、多设备订阅共享规范等 4 项关键对照维度，并附实操入口与详细 FAQ，助力精准避坑。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: easy

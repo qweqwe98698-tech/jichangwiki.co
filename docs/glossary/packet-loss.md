@@ -1,6 +1,6 @@
 ---
 title: 丢包率 (Packet Loss) - TCP 拥塞控制、丢包卡顿机理与专线 0 丢包实战
-description: 深度解析丢包率 (Packet Loss) 对网络速率的毁灭性打击、TCP 拥塞控制与重传机制、晚高峰公网丢包成因与 0 丢包专线机场推荐。
+description: 深度解析丢包率（Packet Loss）对 TCP 拥塞控制算法与单线程下载吞吐速率的毁灭性降速机理，对比公网直连、普通中转与 IEPL 专线在晚高峰 20:00~23:00 的实测丢包表现，并提供丢包自检方法、Hysteria 2 抗丢包优化与升级 0 丢包专线机场的实用方案，全面提升晚高峰稳定速率。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

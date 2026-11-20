@@ -1,6 +1,6 @@
 ---
 title: 2026 现代主流代理协议全景深度横向对比与选型指南
-description: 深度横向对比 VLESS-Reality、Hysteria 2、TUIC v5、Trojan、Shadowsocks 与 VMess 在抗封锁、延迟、吞吐与 CPU 消耗上的终极差异。
+description: 2026 现代主流代理协议全景深度横向对比与选型指南：通过八大协议综合技术参数对照天梯表，深度评估 VLESS-Reality、Hysteria 2、TUIC v5、Trojan、Shadowsocks 与 VMess 在抗封锁能力、握手延迟、晚高峰吞吐及终端 CPU 消耗上的差异及选型，助力做出合理决策。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

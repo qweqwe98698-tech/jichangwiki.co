@@ -1,6 +1,6 @@
 ---
 title: Clash Verge DNS 与 Fake-IP 模式解析
-description: 深入解析 Clash Verge 内置 DNS 模块、Fake-IP 与 Redir-Host 模式差异以及如何避免 DNS 泄漏与污染。
+description: 深入解析 Clash Verge Rev 内置 DNS 模块工作原理，详细对比 Fake-IP 虚拟地址池与 Redir-Host 真实映射模式在解析速度、本地兼容性与日志调试上的差异，并提供防 DNS 污染、防真实 IP 泄露以及国内域名直连加速的高性能 DNS 推荐完整 YAML 配置示范与排错技巧。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium

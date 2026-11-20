@@ -1,6 +1,6 @@
 ---
 title: Shadowrocket (小火箭) 节点全部超时 Timeout 排查 - 测速、时间同步与路由设置
-description: 全面排查 iPhone Shadowrocket（小火箭）点击连通性测试后全部节点显示 Timeout（超时）的原因，涵盖系统时间校准、连通性测速 URL 替换、老旧订阅刷新及全局路由排查。
+description: 全面排查 iPhone Shadowrocket（小火箭）点击连通性测试后全部节点显示 Timeout（超时）的技术根因，涵盖系统时间自动校准、连通性测速 URL（如 gstatic/cp.cloudflare）替换、老旧订阅刷新、蜂窝数据权限开启及全局路由误配置实用排查清单与快速恢复技巧，恢复流畅测速。
 updated: 2026-11-12
 lastReviewed: 2026-11-12
 difficulty: medium

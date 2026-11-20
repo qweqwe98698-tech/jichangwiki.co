@@ -1,6 +1,6 @@
 ---
 title: 原生 IP 与广播 IP 区别深度解析 - Whois 归属、Netflix 自制剧解锁与避坑
-description: 深度解析原生 IP 与广播 IP (播报 IP) 的底层路由差异、为什么导致 Netflix 只能看自制剧、如何精准辨别与选型推荐。
+description: 深度解析原生 IP 与广播 IP（播报 IP）在 BGP 路由宣告与 Whois 物理归属地上的底层差异，揭示为什么使用广播 IP 会导致 Netflix 被降级仅能看自制剧及触发 AI 平台风控，并提供全方位技术对比表、快速识别检验步骤及高纯度原生 IP 专线机场实用选型推荐，确保精准选对解锁节点。
 updated: 2026-08-18
 lastReviewed: 2026-08-18
 difficulty: medium
